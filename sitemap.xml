@@ -2,38 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/chat/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/cool/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/leetcode/</loc>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/leetcodepython-856-score-of-parentheses/</loc>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/privacy/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <loc>/tags/python/</loc>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/right/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/second/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/signal/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <loc>/tags/stack/</loc>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/third/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/test/</loc>
-    <lastmod>2021-12-31T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
     <priority>0</priority>
