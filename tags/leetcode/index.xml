@@ -6,7 +6,16 @@
     <description>Recent content in Leetcode on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode|Python Linked List Column</title>
+      <link>/post/leetcodepython-linked-list-column/</link>
+      <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/leetcodepython-linked-list-column/</guid>
+      <description>Couple of leetcode problems related to linked list</description>
+    </item>
+    
     <item>
       <title>Leetcode|Python 856 Score of Parentheses</title>
       <link>/post/leetcodepython-856-score-of-parentheses/</link>
