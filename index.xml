@@ -6,7 +6,16 @@
     <description>Recent content on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode|Python Some String Problems</title>
+      <link>/post/leetcodepython-some-string-problems/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/leetcodepython-some-string-problems/</guid>
+      <description>About</description>
+    </item>
+    
     <item>
       <title>My 16Personalities Test Results is ENFJ</title>
       <link>/post/my-16personalities-test-results-is-enfj/</link>

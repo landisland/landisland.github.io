@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/leetcodepython-some-string-problems/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/regular-expression/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/string/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/my-16personalities-test-results-is-enfj/</loc>
     <lastmod>2022-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/personality/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2022-01-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/leetcode/</loc>

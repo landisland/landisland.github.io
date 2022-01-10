@@ -101,8 +101,8 @@
   "keywords": [
     "Leetcode", "Python", "Stack"
   ],
-  "articleBody": "From Leetcode 856 Score of Parentheses \nProblem Description Given a balanced parentheses string s, return the score of the string. The score of a balanced parentheses string is based on the following rule:\n  \"()\" has score 1. AB has score A + B, where A and B are balanced parentheses strings. (A) has score 2 * A, where A is a balanced parentheses string.   Solution we use stack to solve this problem:\n If there is a (, we add it to stack because it must match with a ) to get valid value back; If there is a ), we can try to match it with the top value in stack: we can either +1 or *2, here is a tricky way to tackle it: we always choose the greater one : (2 * last) or 1  def scoreOfParentheses(self, s: str) - int: # Create stack stack = [0] for c in s: if c == \"(\": stack.append(0) else: last = stack.pop() stack[-1] += (2 * last) or 1 print(stack) return stack[-1] ",
-  "wordCount" : "172",
+  "articleBody": "From Leetcode 856 Score of Parentheses \n1. Problem Description Given a balanced parentheses string s, return the score of the string. The score of a balanced parentheses string is based on the following rule:\n  \"()\" has score 1. AB has score A + B, where A and B are balanced parentheses strings. (A) has score 2 * A, where A is a balanced parentheses string.   1.1 Solution we use stack to solve this problem:\n If there is a (, we add it to stack because it must match with a ) to get valid value back; If there is a ), we can try to match it with the top value in stack: we can either +1 or *2, here is a tricky way to tackle it: we always choose the greater one : (2 * last) or 1  def scoreOfParentheses(self, s: str) - int: # Create stack stack = [0] for c in s: if c == \"(\": stack.append(0) else: last = stack.pop() stack[-1] += (2 * last) or 1 print(stack) return stack[-1] ",
+  "wordCount" : "174",
   "inLanguage": "en",
   "datePublished": "2022-01-04T00:00:00Z",
   "dateModified": "2022-01-04T00:00:00Z",
@@ -204,9 +204,9 @@
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#problem-description" aria-label="Problem Description">Problem Description</a></li>
+                    <a href="#1-problem-description" aria-label="1. Problem Description">1. Problem Description</a></li>
                 <li>
-                    <a href="#solution" aria-label="Solution">Solution</a>
+                    <a href="#11-solution" aria-label="1.1 Solution">1.1 Solution</a>
                 </li>
             </ul>
         </div>
@@ -214,7 +214,7 @@
 </div>
 
   <div class="post-content"><p>From <a href="https://leetcode.com/problems/score-of-parentheses/">Leetcode 856 Score of Parentheses </a></p>
-<h2 id="problem-description">Problem Description<a hidden class="anchor" aria-hidden="true" href="#problem-description">#</a></h2>
+<h2 id="1-problem-description">1. Problem Description<a hidden class="anchor" aria-hidden="true" href="#1-problem-description">#</a></h2>
 <p>Given a balanced parentheses string <code>s</code>, return the score of the string.
 The score of a balanced parentheses string is based on the following rule:</p>
 <blockquote>
@@ -224,7 +224,7 @@ The score of a balanced parentheses string is based on the following rule:</p>
 <li><code>(A)</code> has score <code>2 * A</code>, where <code>A</code> is a balanced parentheses string.</li>
 </ul>
 </blockquote>
-<h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
+<h2 id="11-solution">1.1 Solution<a hidden class="anchor" aria-hidden="true" href="#11-solution">#</a></h2>
 <p>we use stack to solve this problem:</p>
 <ul>
 <li>If there is a <code>(</code>, we add it to stack because it must match with a <code>)</code> to get valid value back;</li>
