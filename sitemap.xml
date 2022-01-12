@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+    <loc>/tags/github/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/leetcodepython-some-string-problems/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+    <loc>/tags/heatmap/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/my-youtube-2018-2022-watch-history-in-a-heatmap/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/python/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/leetcodepython-some-string-problems/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/regular-expression/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/string/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/my-16personalities-test-results-is-enfj/</loc>
@@ -33,9 +45,6 @@
     <lastmod>2022-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/linked-list/</loc>
-    <lastmod>2022-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
     <lastmod>2022-01-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/leetcodepython-856-score-of-parentheses/</loc>
