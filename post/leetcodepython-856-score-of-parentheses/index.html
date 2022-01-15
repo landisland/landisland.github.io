@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Leetcode|Python 856 Score of Parentheses | Landisland</title>
-<meta name="keywords" content="Leetcode, Python, Stack" />
+<meta name="keywords" content="Leetcode, Python, Stack, learning notes" />
 <meta name="description" content="Use stack to tackle this type of matching problem">
 <meta name="author" content="">
 <link rel="canonical" href="/post/leetcodepython-856-score-of-parentheses/" />
@@ -99,7 +99,7 @@
   "name": "Leetcode|Python 856 Score of Parentheses",
   "description": "Use stack to tackle this type of matching problem",
   "keywords": [
-    "Leetcode", "Python", "Stack"
+    "Leetcode", "Python", "Stack", "learning notes"
   ],
   "articleBody": "From Leetcode 856 Score of Parentheses \n1. Problem Description Given a balanced parentheses string s, return the score of the string. The score of a balanced parentheses string is based on the following rule:\n  \"()\" has score 1. AB has score A + B, where A and B are balanced parentheses strings. (A) has score 2 * A, where A is a balanced parentheses string.   1.1 Solution we use stack to solve this problem:\n If there is a (, we add it to stack because it must match with a ) to get valid value back; If there is a ), we can try to match it with the top value in stack: we can either +1 or *2, here is a tricky way to tackle it: we always choose the greater one : (2 * last) or 1  def scoreOfParentheses(self, s: str) - int: # Create stack stack = [0] for c in s: if c == \"(\": stack.append(0) else: last = stack.pop() stack[-1] += (2 * last) or 1 print(stack) return stack[-1] ",
   "wordCount" : "174",
@@ -251,6 +251,7 @@ return stack[-1]
       <li><a href="/tags/leetcode/">Leetcode</a></li>
       <li><a href="/tags/python/">Python</a></li>
       <li><a href="/tags/stack/">Stack</a></li>
+      <li><a href="/tags/learning-notes/">learning notes</a></li>
     </ul>
   </footer>
 </article>

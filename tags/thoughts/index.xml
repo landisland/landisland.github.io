@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>thoughts on Landisland</title>
+    <link>/tags/thoughts/</link>
+    <description>Recent content in thoughts on Landisland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I Think Data Visualization Is in 2022</title>
+      <link>/post/what-i-think-data-visualization-is-in-2022/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/what-i-think-data-visualization-is-in-2022/</guid>
+      <description>What I think is data visualization,</description>
+    </item>
+    
+  </channel>
+</rss>

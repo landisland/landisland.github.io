@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Landisland</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on Landisland</description>
+    <title>learning notes on Landisland</title>
+    <link>/tags/learning-notes/</link>
+    <description>Recent content in learning notes on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/learning-notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What I Think Data Visualization Is in 2022</title>
       <link>/post/what-i-think-data-visualization-is-in-2022/</link>
@@ -17,30 +17,12 @@
     </item>
     
     <item>
-      <title>My YouTube 2018-2022 Watch History in A Heatmap Using GitHubPoster</title>
-      <link>/post/my-youtube-2018-2022-watch-history-in-a-heatmap/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/post/my-youtube-2018-2022-watch-history-in-a-heatmap/</guid>
-      <description>Heatmap can show a lot</description>
-    </item>
-    
-    <item>
       <title>Leetcode|Python Some String Problems</title>
       <link>/post/leetcodepython-some-string-problems/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/post/leetcodepython-some-string-problems/</guid>
       <description>Leetcode problems about string</description>
-    </item>
-    
-    <item>
-      <title>My 16Personalities Test Results is ENFJ</title>
-      <link>/post/my-16personalities-test-results-is-enfj/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/post/my-16personalities-test-results-is-enfj/</guid>
-      <description>Summary of My 16Personalities Test Results</description>
     </item>
     
     <item>
