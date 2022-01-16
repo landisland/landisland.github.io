@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Leetcode|Python Linked List Column | Landisland</title>
+<meta name="keywords" content="Leetcode, Python, Linked List, learning notes" />
+<meta name="description" content="Couple of leetcode problems related to linked list">
+<meta name="author" content="">
+<link rel="canonical" href="/notes/2022-01-05leetcodepython-linked-list-column/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Leetcode|Python Linked List Column" />
+<meta property="og:description" content="Couple of leetcode problems related to linked list" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/notes/2022-01-05leetcodepython-linked-list-column/" /><meta property="article:section" content="notes" />
+<meta property="article:published_time" content="2022-01-05T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-01-05T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode|Python Linked List Column"/>
+<meta name="twitter:description" content="Couple of leetcode problems related to linked list"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "/notes/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Leetcode|Python Linked List Column",
+      "item": "/notes/2022-01-05leetcodepython-linked-list-column/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Leetcode|Python Linked List Column",
+  "name": "Leetcode|Python Linked List Column",
+  "description": "Couple of leetcode problems related to linked list",
+  "keywords": [
+    "Leetcode", "Python", "Linked List", "learning notes"
+  ],
+  "articleBody": "1. Convert Binary Number in a Linked List to Integer From 1290. Convert Binary Number in a Linked List to Integer\n1.1 Problem Description Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number.\nReturn the decimal value of the number in the linked list.\nExample\nInput: head = [1,0,1] Output: 5 Explanation: (101) in base 2 = (5) in base 10 1.2 Solution  Try to store head value in string format Then use int() method to turn binary to decimal  class Solution: def getDecimalValue(self, head: ListNode) - int: #create str s to store value s = \"\" # while loop until linked list ends while head: s += str(head.val) head = head.next return int(s,2) #base is 2, binary to decimal  2. Middle of the Linked List From 876. Middle of the Linked List\n2.1 Problem Description Given the head of a singly linked list, return the middle node of the linked list.\nIf there are two middle nodes, return the second middle node.\nExample\nInput: head = [1,2,3,4,5] Output: [3,4,5] Explanation: The middle node of the list is node 3. 2.2 Solution A smart way is to use 2 pointers, slow and fast, each time slow goes 1 step while fast goes 2 step, hence when fast hits the end, slow will point to the middle of the linked list.\ndef middleNode(self, head: Optional[ListNode]) - Optional[ListNode]: # create 2 pointers slow = fast = head # while fast has not hit the end while fast and fast.next: slow = slow.next fast = fast.next.next # slow will point the middle of the linked list return slow 3. “Delete” Node in a Linked List From 237. Delete Node in a Linked List\n3.1 Problem Description Write a function to delete a node in a singly-linked list. You will not be given access to the head of the list, instead you will be given access to the node to be deleted directly.\nIt is guaranteed that the node to be deleted is not a tail node in the list.\nExample\nInput: head = [4,5,1,9], node = 5 Output: [4,1,9] Explanation: You are given the second node with value 5, the linked list should become 4 - 1 - 9 after calling your function. 3.2 Solution Actually you can not really delete a node, you just skip this node and point to the next.\nclass Solution: def deleteNode(self, node): \"\"\" :type node: ListNode :rtype: void Do not return anything, modify node in-place instead. \"\"\" node.val = node.next.val node.next = node.next.next 4. Reverse Linked List From 206. Reverse Linked List\n4.1 Problem Description Given the head of a singly linked list, reverse the list, and return the reversed list.\nExample\nInput: head = [1,2,3,4,5] Output: [5,4,3,2,1] 4.2 Solution The idea is to give next value to previous value.\nclass Solution: def reverseList(self, head: Optional[ListNode]) - Optional[ListNode]: cur, prev = head, None while cur: cur.next, prev, cur = prev, cur, cur.next return prev 5. Palindrome Linked List From 234. Palindrome Linked List\n5.1 Problem Description Given the head of a singly linked list, return true if it is a palindrome.\nExample\nInput: head = [1,2,2,1] Output: true 5.2 Solution We can combine what we learned in 206. Reverse Linked List, first we try to get the reverse first half of linked list using slow and fast pointers, and then compare the value of the first half linked list with the second half of the linked list.\ndef isPalindrome(self, head): fast = slow = head # find the mid node, slow will point to the mid node while fast and fast.next: fast = fast.next.next slow = slow.next # reverse the second half node = None while slow: nxt = slow.next slow.next = node node = slow slow = nxt # compare the first and second half nodes while node: # while node and head: if node.val != head.val: return False node = node.next head = head.next return True 6. Linked List Cycle From 141. Linked List Cycle\n6.1 Problem Description Given head, the head of a linked list, determine if the linked list has a cycle in it.\nThere is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail’s next pointer is connected to. Note that pos is not passed as a parameter.\nReturn true if there is a cycle in the linked list. Otherwise, return false.\nExample\n6.2 Solution The idea is similar to 876. Middle of the Linked List, we can use slow and fast pointers to tackle this problem.\nclass Solution: def hasCycle(self, head: Optional[ListNode]) - bool: try: slow = head fast = head.next while slow is not fast: slow = slow.next fast = fast.next.next return True except: return False ",
+  "wordCount" : "831",
+  "inLanguage": "en",
+  "datePublished": "2022-01-05T00:00:00Z",
+  "dateModified": "2022-01-05T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/notes/2022-01-05leetcodepython-linked-list-column/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/notes" title="Notes">
+                    <span>Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chinese" title="Chinese">
+                    <span>Chinese</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Leetcode|Python Linked List Column
+    </h1>
+    <div class="post-meta"><span title='2022-01-05 00:00:00 +0000 UTC'>January 5, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1-convert-binary-number-in-a-linked-list-to-integer" aria-label="1. Convert Binary Number in a Linked List to Integer">1. Convert Binary Number in a Linked List to Integer</a><ul>
+                        
+                <li>
+                    <a href="#11-problem-description" aria-label="1.1 Problem Description">1.1 Problem Description</a></li>
+                <li>
+                    <a href="#12-solution" aria-label="1.2 Solution">1.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-middle-of-the-linked-list" aria-label="2. Middle of the Linked List">2. Middle of the Linked List</a><ul>
+                        
+                <li>
+                    <a href="#21-problem-description" aria-label="2.1 Problem Description">2.1 Problem Description</a></li>
+                <li>
+                    <a href="#22-solution" aria-label="2.2 Solution">2.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3-delete-node-in-a-linked-list" aria-label="3. &amp;ldquo;Delete&amp;rdquo; Node in a Linked List">3. &ldquo;Delete&rdquo; Node in a Linked List</a><ul>
+                        
+                <li>
+                    <a href="#31-problem-description" aria-label="3.1 Problem Description">3.1 Problem Description</a></li>
+                <li>
+                    <a href="#32-solution" aria-label="3.2 Solution">3.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4-reverse-linked-list" aria-label="4. Reverse Linked List">4. Reverse Linked List</a><ul>
+                        
+                <li>
+                    <a href="#41-problem-description" aria-label="4.1 Problem Description">4.1 Problem Description</a></li>
+                <li>
+                    <a href="#42-solution" aria-label="4.2 Solution">4.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#5-palindrome-linked-list" aria-label="5. Palindrome Linked List">5. Palindrome Linked List</a><ul>
+                        
+                <li>
+                    <a href="#51-problem-description" aria-label="5.1 Problem Description">5.1 Problem Description</a></li>
+                <li>
+                    <a href="#52-solution" aria-label="5.2 Solution">5.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#6-linked-list-cycle" aria-label="6. Linked List Cycle">6. Linked List Cycle</a><ul>
+                        
+                <li>
+                    <a href="#61-problem-description" aria-label="6.1 Problem Description">6.1 Problem Description</a></li>
+                <li>
+                    <a href="#62-solution" aria-label="6.2 Solution">6.2 Solution</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="1-convert-binary-number-in-a-linked-list-to-integer">1. Convert Binary Number in a Linked List to Integer<a hidden class="anchor" aria-hidden="true" href="#1-convert-binary-number-in-a-linked-list-to-integer">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/">1290. Convert Binary Number in a Linked List to Integer</a></p>
+<h2 id="11-problem-description">1.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#11-problem-description">#</a></h2>
+<p>Given <code>head</code> which is a reference node to a singly-linked list. The value of each node in the linked list is either <code>0</code> or <code>1</code>. The linked list holds the binary representation of a number.</p>
+<p>Return the <em>decimal value</em> of the number in the linked list.</p>
+<p><strong>Example</strong></p>
+<p><img loading="lazy" src="https://assets.leetcode.com/uploads/2019/12/05/graph-1.png" alt="img"  />
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: head <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>]
+Output: <span style="color:#ae81ff">5</span>
+Explanation: (<span style="color:#ae81ff">101</span>) <span style="color:#f92672">in</span> base <span style="color:#ae81ff">2</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">5</span>) <span style="color:#f92672">in</span> base <span style="color:#ae81ff">10</span>
+</code></pre></div><h2 id="12-solution">1.2 Solution<a hidden class="anchor" aria-hidden="true" href="#12-solution">#</a></h2>
+<ol>
+<li>Try to store <code>head</code> value in <code>string</code> format</li>
+<li>Then use <code>int()</code> method to turn binary to decimal</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getDecimalValue</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> int:
+      	<span style="color:#75715e">#create str s to store value</span>
+        s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+        
+        <span style="color:#75715e"># while loop until linked list ends</span>
+        <span style="color:#66d9ef">while</span> head:
+          s <span style="color:#f92672">+=</span> str(head<span style="color:#f92672">.</span>val)
+          head <span style="color:#f92672">=</span> head<span style="color:#f92672">.</span>next
+        
+        <span style="color:#66d9ef">return</span> int(s,<span style="color:#ae81ff">2</span>) <span style="color:#75715e">#base is 2, binary to decimal </span>
+</code></pre></div><h1 id="2-middle-of-the-linked-list">2. Middle of the Linked List<a hidden class="anchor" aria-hidden="true" href="#2-middle-of-the-linked-list">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/middle-of-the-linked-list/">876. Middle of the Linked List</a></p>
+<h2 id="21-problem-description">2.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#21-problem-description">#</a></h2>
+<p>Given the <code>head</code> of a singly linked list, return <em>the middle node of the linked list</em>.</p>
+<p>If there are two middle nodes, return <strong>the second middle</strong> node.</p>
+<p><strong>Example</strong></p>
+<p><img loading="lazy" src="https://assets.leetcode.com/uploads/2021/07/23/lc-midlist1.jpg" alt="img"  />
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: head <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+Output: [<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+Explanation: The middle node of the list <span style="color:#f92672">is</span> node <span style="color:#ae81ff">3.</span>
+</code></pre></div><h2 id="22-solution">2.2 Solution<a hidden class="anchor" aria-hidden="true" href="#22-solution">#</a></h2>
+<p>A smart way is to use 2 pointers, <code>slow</code> and <code>fast</code>, each time <code>slow</code> goes 1 step while <code>fast</code> goes 2 step, hence when <code>fast</code> hits the end, <code>slow</code> will point to the middle of the linked list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">middleNode</span>(self, head: Optional[ListNode]) <span style="color:#f92672">-&gt;</span> Optional[ListNode]:
+  			<span style="color:#75715e"># create 2 pointers</span>
+        slow <span style="color:#f92672">=</span> fast <span style="color:#f92672">=</span> head
+      
+      	<span style="color:#75715e"># while fast has not hit the end</span>
+        <span style="color:#66d9ef">while</span> fast <span style="color:#f92672">and</span> fast<span style="color:#f92672">.</span>next:
+            slow <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+            fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next
+        
+        <span style="color:#75715e"># slow will point the middle of the linked list</span>
+        <span style="color:#66d9ef">return</span> slow
+</code></pre></div><h1 id="3-delete-node-in-a-linked-list">3. &ldquo;Delete&rdquo; Node in a Linked List<a hidden class="anchor" aria-hidden="true" href="#3-delete-node-in-a-linked-list">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/delete-node-in-a-linked-list/">237. Delete Node in a Linked List</a></p>
+<h2 id="31-problem-description">3.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#31-problem-description">#</a></h2>
+<p>Write a function to <strong>delete a node</strong> in a singly-linked list. You will <strong>not</strong> be given access to the <code>head</code> of the list, instead you will be given access to <strong>the node to be deleted</strong> directly.</p>
+<p>It is <strong>guaranteed</strong> that the node to be deleted is <strong>not a tail node</strong> in the list.</p>
+<p><strong>Example</strong></p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: head <span style="color:#f92672">=</span> [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">9</span>], node <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+Output: [<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">9</span>]
+Explanation: You are given the second node <span style="color:#66d9ef">with</span> value <span style="color:#ae81ff">5</span>, the linked list should become <span style="color:#ae81ff">4</span> <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">-&gt;</span> <span style="color:#ae81ff">9</span> after calling your function<span style="color:#f92672">.</span>
+</code></pre></div><h2 id="32-solution">3.2 Solution<a hidden class="anchor" aria-hidden="true" href="#32-solution">#</a></h2>
+<p>Actually you <strong>can not</strong> really delete a node, you just skip this node and point to the next.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">deleteNode</span>(self, node):
+        <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">        :type node: ListNode
+</span><span style="color:#e6db74">        :rtype: void Do not return anything, modify node in-place instead.
+</span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+        node<span style="color:#f92672">.</span>val <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>val
+        node<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next
+</code></pre></div><h1 id="4-reverse-linked-list">4. Reverse Linked List<a hidden class="anchor" aria-hidden="true" href="#4-reverse-linked-list">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/reverse-linked-list/">206. Reverse Linked List</a></p>
+<h2 id="41-problem-description">4.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#41-problem-description">#</a></h2>
+<p>Given the <code>head</code> of a singly linked list, reverse the list, and return <em>the reversed list</em>.</p>
+<p><strong>Example</strong></p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: head <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>]
+Output: [<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>]
+</code></pre></div><h2 id="42-solution">4.2 Solution<a hidden class="anchor" aria-hidden="true" href="#42-solution">#</a></h2>
+<p>The idea is to give <strong>next</strong> value to <strong>previous</strong> value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseList</span>(self, head: Optional[ListNode]) <span style="color:#f92672">-&gt;</span> Optional[ListNode]:
+        cur, prev <span style="color:#f92672">=</span> head, <span style="color:#66d9ef">None</span>
+        <span style="color:#66d9ef">while</span> cur:
+            cur<span style="color:#f92672">.</span>next, prev, cur <span style="color:#f92672">=</span> prev, cur, cur<span style="color:#f92672">.</span>next
+        <span style="color:#66d9ef">return</span> prev
+</code></pre></div><h1 id="5-palindrome-linked-list">5. Palindrome Linked List<a hidden class="anchor" aria-hidden="true" href="#5-palindrome-linked-list">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/palindrome-linked-list/">234. Palindrome Linked List</a></p>
+<h2 id="51-problem-description">5.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#51-problem-description">#</a></h2>
+<p>Given the <code>head</code> of a singly linked list, return <code>true</code> if it is a palindrome.</p>
+<p><strong>Example</strong></p>
+<p><img loading="lazy" src="https://assets.leetcode.com/uploads/2021/03/03/pal1linked-list.jpg" alt="img"  />
+</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: head <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">1</span>]
+Output: true
+</code></pre></div><h2 id="52-solution">5.2 Solution<a hidden class="anchor" aria-hidden="true" href="#52-solution">#</a></h2>
+<p>We can combine what we learned in <a href="https://leetcode.com/problems/reverse-linked-list/">206. Reverse Linked List</a>, first we try to get the reverse first half of linked list using <code>slow</code> and <code>fast</code> pointers, and then compare the value of the first half linked list with the second half of the linked list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isPalindrome</span>(self, head):
+    fast <span style="color:#f92672">=</span> slow <span style="color:#f92672">=</span> head
+    <span style="color:#75715e"># find the mid node, slow will point to the mid node</span>
+    <span style="color:#66d9ef">while</span> fast <span style="color:#f92672">and</span> fast<span style="color:#f92672">.</span>next:
+        fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next
+        slow <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+    <span style="color:#75715e"># reverse the second half</span>
+    node <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+    <span style="color:#66d9ef">while</span> slow:
+        nxt <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+        slow<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> node
+        node <span style="color:#f92672">=</span> slow
+        slow <span style="color:#f92672">=</span> nxt
+    <span style="color:#75715e"># compare the first and second half nodes</span>
+    <span style="color:#66d9ef">while</span> node: <span style="color:#75715e"># while node and head:</span>
+        <span style="color:#66d9ef">if</span> node<span style="color:#f92672">.</span>val <span style="color:#f92672">!=</span> head<span style="color:#f92672">.</span>val:
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+        node <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next
+        head <span style="color:#f92672">=</span> head<span style="color:#f92672">.</span>next
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</code></pre></div><h1 id="6-linked-list-cycle">6. Linked List Cycle<a hidden class="anchor" aria-hidden="true" href="#6-linked-list-cycle">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/linked-list-cycle/">141. Linked List Cycle</a></p>
+<h2 id="61-problem-description">6.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#61-problem-description">#</a></h2>
+<p>Given <code>head</code>, the head of a linked list, determine if the linked list has a cycle in it.</p>
+<p>There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the <code>next</code> pointer. Internally, <code>pos</code> is used to denote the index of the node that tail&rsquo;s <code>next</code> pointer is connected to. <strong>Note that <code>pos</code> is not passed as a parameter</strong>.</p>
+<p>Return <code>true</code> <em>if there is a cycle in the linked list</em>. Otherwise, return <code>false</code>.</p>
+<p><strong>Example</strong></p>
+<!-- raw HTML omitted -->
+<h2 id="62-solution">6.2 Solution<a hidden class="anchor" aria-hidden="true" href="#62-solution">#</a></h2>
+<p>The idea is similar to <a href="https://leetcode.com/problems/middle-of-the-linked-list/">876. Middle of the Linked List</a>, we can use <code>slow</code> and <code>fast</code> pointers to tackle this problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">hasCycle</span>(self, head: Optional[ListNode]) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#66d9ef">try</span>:
+            slow <span style="color:#f92672">=</span> head
+            fast <span style="color:#f92672">=</span> head<span style="color:#f92672">.</span>next
+            <span style="color:#66d9ef">while</span> slow <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> fast:
+                slow <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
+                fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+        
+        <span style="color:#66d9ef">except</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/leetcode/">Leetcode</a></li>
+      <li><a href="/tags/python/">Python</a></li>
+      <li><a href="/tags/linked-list/">Linked List</a></li>
+      <li><a href="/tags/learning-notes/">learning notes</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

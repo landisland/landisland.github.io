@@ -27,10 +27,10 @@
     
     <item>
       <title>Leetcode|Python Some String Problems</title>
-      <link>/shortnotes/2022-01-05leetcodepython-some-string-problems/</link>
+      <link>/notes/2022-01-05leetcodepython-some-string-problems/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/shortnotes/2022-01-05leetcodepython-some-string-problems/</guid>
+      <guid>/notes/2022-01-05leetcodepython-some-string-problems/</guid>
       <description>Leetcode problems about string</description>
     </item>
     
@@ -45,19 +45,19 @@
     
     <item>
       <title>Leetcode|Python Linked List Column</title>
-      <link>/shortnotes/2022-01-05leetcodepython-linked-list-column/</link>
+      <link>/notes/2022-01-05leetcodepython-linked-list-column/</link>
       <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/shortnotes/2022-01-05leetcodepython-linked-list-column/</guid>
+      <guid>/notes/2022-01-05leetcodepython-linked-list-column/</guid>
       <description>Couple of leetcode problems related to linked list</description>
     </item>
     
     <item>
       <title>Leetcode|Python 856 Score of Parentheses</title>
-      <link>/shortnotes/2022-01-14leetcodepython-856-score-of-parentheses/</link>
+      <link>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/shortnotes/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
+      <guid>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
       <description>Use stack to tackle this type of matching problem</description>
     </item>
     
