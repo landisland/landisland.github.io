@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Python on Landisland</title>
-    <link>/tags/python/</link>
-    <description>Recent content in Python on Landisland</description>
+    <title>Shortnotes on Landisland</title>
+    <link>/shortnotes/</link>
+    <description>Recent content in Shortnotes on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/shortnotes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My YouTube 2018-2022 Watch History in A Heatmap Using GitHubPoster</title>
-      <link>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      <title>Leetcode|Python Some String Problems</title>
+      <link>/shortnotes/2022-01-05leetcodepython-some-string-problems/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</guid>
-      <description>Heatmap can show a lot</description>
+      <guid>/shortnotes/2022-01-05leetcodepython-some-string-problems/</guid>
+      <description>Leetcode problems about string</description>
     </item>
     
     <item>

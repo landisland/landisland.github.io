@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Leetcode|Python Some String Problems | Landisland</title>
+<meta name="keywords" content="String, regular expression, learning notes" />
+<meta name="description" content="Leetcode problems about string">
+<meta name="author" content="">
+<link rel="canonical" href="/shortnotes/2022-01-05leetcodepython-some-string-problems/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Leetcode|Python Some String Problems" />
+<meta property="og:description" content="Leetcode problems about string" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/shortnotes/2022-01-05leetcodepython-some-string-problems/" /><meta property="article:section" content="shortnotes" />
+<meta property="article:published_time" content="2022-01-10T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-01-10T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leetcode|Python Some String Problems"/>
+<meta name="twitter:description" content="Leetcode problems about string"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Shortnotes",
+      "item": "/shortnotes/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Leetcode|Python Some String Problems",
+      "item": "/shortnotes/2022-01-05leetcodepython-some-string-problems/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Leetcode|Python Some String Problems",
+  "name": "Leetcode|Python Some String Problems",
+  "description": "Leetcode problems about string",
+  "keywords": [
+    "String", "regular expression", "learning notes"
+  ],
+  "articleBody": "1. Unique Email Addresses From 929. Unique Email Addresses\n1.1 Problem Description Every valid email consists of a local name and a domain name, separated by the '@'sign. Besides lowercase letters, the email may contain one or more '.' or '+'.\n For example, in \"alice@leetcode.com\", \"alice\" is the local name, and \"leetcode.com\" is the domain name.  If you add periods '.' between some characters in the local name part of an email address, mail sent there will be forwarded to the same address without dots in the local name. Note that this rule does not apply to domain names.\n For example, \"alice.z@leetcode.com\" and \"alicez@leetcode.com\" forward to the same email address.  If you add a plus '+' in the local name, everything after the first plus sign will be ignored. This allows certain emails to be filtered. Note that this rule does not apply to domain names.\n For example, \"m.y+name@email.com\" will be forwarded to \"my@email.com\".  It is possible to use both of these rules at the same time.\nGiven an array of strings emails where we send one email to each emails[i], return the number of different addresses that actually receive mails.\n1.2 Solution We can use split() and replace here:\n split() is to split email address using @ as identifier replace is to use \"\" to replace .  class Solution: def numUniqueEmails(self, emails: List[str]) - int: actual = set() for email in emails: local, domain = email.split('@') local = local.split('+')[0].replace('.', '') actual.add((local, domain)) return len(actual) 2. Day of the Year From 1154. Day of the Year\n2.1 Problem Description Given a string date representing a Gregorian calendar date formatted as YYYY-MM-DD, return the day number of the year.\nA leap year:\n can be divided by 4, 400 cannot be divided by 100  2.2 Solution class Solution: def dayOfYear(self, date: str) - int: # data's type is string, we want to 1)split it into 3 prats: year, month, day; 2) type from string to int # we can use map() y, m, d = map(int, date.split('-')) days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] if (y % 400) == 0 or ((y % 4 == 0) and (y % 100 != 0)): days[1] = 29 return d + sum(days[:m-1]) 3. Rotate String From 796. Rotate String\n3.1 Problem Description Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.\nA shift on s consists of moving the leftmost character of s to the rightmost position.\n For example, if s = \"abcde\", then it will be \"bcdea\" after one shift.  Example 1:\nInput: s = \"abcde\", goal = \"cdeab\" Output: true Example 2:\nInput: s = \"abcde\", goal = \"abced\" Output: false 3.2 Solution One easy way to solve this problem is we can find out that string goal is also in s + s if goal is rotated from s.\nclass Solution: def rotateString(self, s: str, goal: str) - bool: return len(s) == len(goal) and goal in s + s 4. Most Common Word From 819. Most Common Word\n4.1 Problem Description Given a string paragraph and a string array of the banned words banned, return the most frequent word that is not banned. It is guaranteed there is at least one word that is not banned, and that the answer is unique.\nThe words in paragraph are case-insensitive and the answer should be returned in lowercase.\nExample 1:\nInput: paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"] Output: \"ball\" Explanation: \"hit\" occurs 3 times, but it is a banned word. \"ball\" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. Note that words in the paragraph are not case sensitive, that punctuation is ignored (even if adjacent to words, such as \"ball,\"), and that \"hit\" isn't the answer even though it occurs more because it is banned. 4.2 Solution 4 steps:\n remove all punctuations change to lowercase words count for each word not in banned set return the most common word  class Solution: def mostCommonWord(self, paragraph: str, banned: List[str]) - str: ban = set(banned) # \\w: Matches Unicode word characters, + means Repetition qualifiers words = re.findall(r'\\w+', paragraph.lower()) print(words) # most_common(n most common elements) return collections.Counter(w for w in words if w not in ban).most_common(1)[0][0] ",
+  "wordCount" : "733",
+  "inLanguage": "en",
+  "datePublished": "2022-01-10T00:00:00Z",
+  "dateModified": "2022-01-10T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/shortnotes/2022-01-05leetcodepython-some-string-problems/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/shortnotes" title="Short Notes">
+                    <span>Short Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chinese" title="Chinese">
+                    <span>Chinese</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Leetcode|Python Some String Problems
+    </h1>
+    <div class="post-meta"><span title='2022-01-10 00:00:00 +0000 UTC'>January 10, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1-unique-email-addresses" aria-label="1. Unique Email Addresses">1. Unique Email Addresses</a><ul>
+                        
+                <li>
+                    <a href="#11-problem-description" aria-label="1.1 Problem Description">1.1 Problem Description</a></li>
+                <li>
+                    <a href="#12-solution" aria-label="1.2 Solution">1.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#2-day-of-the-year" aria-label="2. Day of the Year">2. Day of the Year</a><ul>
+                        
+                <li>
+                    <a href="#21-problem-description" aria-label="2.1 Problem Description">2.1 Problem Description</a></li>
+                <li>
+                    <a href="#22-solution" aria-label="2.2 Solution">2.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#3-rotate-string" aria-label="3. Rotate String">3. Rotate String</a><ul>
+                        
+                <li>
+                    <a href="#31-problem-description" aria-label="3.1 Problem Description">3.1 Problem Description</a></li>
+                <li>
+                    <a href="#32-solution" aria-label="3.2 Solution">3.2 Solution</a></li></ul>
+                </li>
+                <li>
+                    <a href="#4-most-common-word" aria-label="4. Most Common Word">4. Most Common Word</a><ul>
+                        
+                <li>
+                    <a href="#41-problem-description" aria-label="4.1 Problem Description">4.1 Problem Description</a></li>
+                <li>
+                    <a href="#42-solution" aria-label="4.2 Solution">4.2 Solution</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="1-unique-email-addresses">1. Unique Email Addresses<a hidden class="anchor" aria-hidden="true" href="#1-unique-email-addresses">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/unique-email-addresses/">929. Unique Email Addresses</a></p>
+<h2 id="11-problem-description">1.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#11-problem-description">#</a></h2>
+<p>Every <strong>valid email</strong> consists of a <strong>local name</strong> and a <strong>domain name</strong>, separated by the <code>'@'</code>sign. Besides lowercase letters, the email may contain one or more <code>'.'</code> or <code>'+'</code>.</p>
+<ul>
+<li>For example, in <code>&quot;alice@leetcode.com&quot;</code>, <code>&quot;alice&quot;</code> is the <strong>local name</strong>, and <code>&quot;leetcode.com&quot;</code> is the <strong>domain name</strong>.</li>
+</ul>
+<p>If you add periods <code>'.'</code> between some characters in the <strong>local name</strong> part of an email address, mail sent there will be forwarded to the same address without dots in the local name. Note that this rule <strong>does not apply</strong> to <strong>domain names</strong>.</p>
+<ul>
+<li>For example, <code>&quot;alice.z@leetcode.com&quot;</code> and <code>&quot;alicez@leetcode.com&quot;</code> forward to the same email address.</li>
+</ul>
+<p>If you add a plus <code>'+'</code> in the <strong>local name</strong>, everything after the first plus sign <strong>will be ignored</strong>. This allows certain emails to be filtered. Note that this rule <strong>does not apply</strong> to <strong>domain names</strong>.</p>
+<ul>
+<li>For example, <code>&quot;m.y+name@email.com&quot;</code> will be forwarded to <code>&quot;my@email.com&quot;</code>.</li>
+</ul>
+<p>It is possible to use both of these rules at the same time.</p>
+<p>Given an array of strings <code>emails</code> where we send one email to each <code>emails[i]</code>, return <em>the number of different addresses that actually receive mails</em>.</p>
+<h2 id="12-solution">1.2 Solution<a hidden class="anchor" aria-hidden="true" href="#12-solution">#</a></h2>
+<p>We can use <code>split()</code> and <code>replace</code> here:</p>
+<ul>
+<li><code>split()</code> is to split email address using <code>@</code> as identifier</li>
+<li><code>replace</code> is to use <code>&quot;&quot;</code> to replace <code>.</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">numUniqueEmails</span>(self, emails: List[str]) <span style="color:#f92672">-&gt;</span> int:
+        actual <span style="color:#f92672">=</span> set()
+        <span style="color:#66d9ef">for</span> email <span style="color:#f92672">in</span> emails:
+            local, domain <span style="color:#f92672">=</span> email<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;@&#39;</span>)
+            local <span style="color:#f92672">=</span> local<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;+&#39;</span>)[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;.&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+            actual<span style="color:#f92672">.</span>add((local, domain))
+        <span style="color:#66d9ef">return</span> len(actual)
+</code></pre></div><h1 id="2-day-of-the-year">2. Day of the Year<a hidden class="anchor" aria-hidden="true" href="#2-day-of-the-year">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/day-of-the-year/">1154. Day of the Year</a></p>
+<h2 id="21-problem-description">2.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#21-problem-description">#</a></h2>
+<p>Given a string <code>date</code> representing a <a href="https://en.wikipedia.org/wiki/Gregorian_calendar">Gregorian calendar</a> date formatted as <code>YYYY-MM-DD</code>, return <em>the day number of the year</em>.</p>
+<p>A leap year:</p>
+<ul>
+<li>can be divided by 4, 400</li>
+<li><strong>cannot</strong>  be divided by 100</li>
+</ul>
+<h2 id="22-solution">2.2 Solution<a hidden class="anchor" aria-hidden="true" href="#22-solution">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dayOfYear</span>(self, date: str) <span style="color:#f92672">-&gt;</span> int:
+        
+        <span style="color:#75715e"># data&#39;s type is string, we want to 1)split it into 3 prats: year, month, day; 2) type from string to int</span>
+        <span style="color:#75715e"># we can use map()</span>
+        y, m, d <span style="color:#f92672">=</span> map(int, date<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;-&#39;</span>))
+        
+        days <span style="color:#f92672">=</span> [<span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">31</span>]
+        <span style="color:#66d9ef">if</span> (y <span style="color:#f92672">%</span> <span style="color:#ae81ff">400</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">or</span> ((y <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">and</span> (y <span style="color:#f92672">%</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>)): days[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">29</span>
+        <span style="color:#66d9ef">return</span> d <span style="color:#f92672">+</span> sum(days[:m<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+</code></pre></div><h1 id="3-rotate-string">3. Rotate String<a hidden class="anchor" aria-hidden="true" href="#3-rotate-string">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/rotate-string/">796. Rotate String</a></p>
+<h2 id="31-problem-description">3.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#31-problem-description">#</a></h2>
+<p>Given two strings <code>s</code> and <code>goal</code>, return <code>true</code> <em>if and only if</em> <code>s</code> <em>can become</em> <code>goal</code> <em>after some number of <strong>shifts</strong> on</em> <code>s</code>.</p>
+<p>A <strong>shift</strong> on <code>s</code> consists of moving the leftmost character of <code>s</code> to the rightmost position.</p>
+<ul>
+<li>For example, if <code>s = &quot;abcde&quot;</code>, then it will be <code>&quot;bcdea&quot;</code> after one shift.</li>
+</ul>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde&#34;</span>, goal <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cdeab&#34;</span>
+Output: true
+</code></pre></div><p><strong>Example 2:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abcde&#34;</span>, goal <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;abced&#34;</span>
+Output: false
+</code></pre></div><h2 id="32-solution">3.2 Solution<a hidden class="anchor" aria-hidden="true" href="#32-solution">#</a></h2>
+<p>One easy way to solve this problem is we can find out that string <code>goal</code> is also in <code>s + s</code> if <code>goal</code> is rotated from <code>s</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rotateString</span>(self, s: str, goal: str) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#66d9ef">return</span> len(s) <span style="color:#f92672">==</span> len(goal) <span style="color:#f92672">and</span> goal <span style="color:#f92672">in</span> s <span style="color:#f92672">+</span> s
+</code></pre></div><h1 id="4-most-common-word">4. Most Common Word<a hidden class="anchor" aria-hidden="true" href="#4-most-common-word">#</a></h1>
+<p>From <a href="https://leetcode.com/problems/most-common-word/">819. Most Common Word</a></p>
+<h2 id="41-problem-description">4.1 Problem Description<a hidden class="anchor" aria-hidden="true" href="#41-problem-description">#</a></h2>
+<p>Given a string <code>paragraph</code> and a string array of the banned words <code>banned</code>, return <em>the most frequent word that is not banned</em>. It is <strong>guaranteed</strong> there is <strong>at least one word</strong> that is not banned, and that the answer is <strong>unique</strong>.</p>
+<p>The words in <code>paragraph</code> are <strong>case-insensitive</strong> and the answer should be returned in <strong>lowercase</strong>.</p>
+<p><strong>Example 1:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: paragraph <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bob hit a ball, the hit BALL flew far after it was hit.&#34;</span>, banned <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;hit&#34;</span>]
+Output: <span style="color:#e6db74">&#34;ball&#34;</span>
+Explanation: 
+<span style="color:#e6db74">&#34;hit&#34;</span> occurs <span style="color:#ae81ff">3</span> times, but it <span style="color:#f92672">is</span> a banned word<span style="color:#f92672">.</span>
+<span style="color:#e6db74">&#34;ball&#34;</span> occurs twice (<span style="color:#f92672">and</span> no other word does), so it <span style="color:#f92672">is</span> the most frequent non<span style="color:#f92672">-</span>banned word <span style="color:#f92672">in</span> the paragraph<span style="color:#f92672">.</span> 
+Note that words <span style="color:#f92672">in</span> the paragraph are <span style="color:#f92672">not</span> case sensitive,
+that punctuation <span style="color:#f92672">is</span> ignored (even <span style="color:#66d9ef">if</span> adjacent to words, such <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#34;ball,&#34;</span>), 
+<span style="color:#f92672">and</span> that <span style="color:#e6db74">&#34;hit&#34;</span> isn<span style="color:#e6db74">&#39;t the answer even though it occurs more because it is banned.</span>
+</code></pre></div><h2 id="42-solution">4.2 Solution<a hidden class="anchor" aria-hidden="true" href="#42-solution">#</a></h2>
+<p>4 steps:</p>
+<ol>
+<li>remove all punctuations</li>
+<li>change to lowercase</li>
+<li>words count for each word not in banned set</li>
+<li>return the most common word</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mostCommonWord</span>(self, paragraph: str, banned: List[str]) <span style="color:#f92672">-&gt;</span> str:
+        ban <span style="color:#f92672">=</span> set(banned)
+        <span style="color:#75715e"># \w: Matches Unicode word characters, + means Repetition qualifiers</span>
+        words <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>findall(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\w+&#39;</span>, paragraph<span style="color:#f92672">.</span>lower())
+        print(words)
+        <span style="color:#75715e"># most_common(n most common elements)</span>
+        <span style="color:#66d9ef">return</span> collections<span style="color:#f92672">.</span>Counter(w <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> words <span style="color:#66d9ef">if</span> w <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> ban)<span style="color:#f92672">.</span>most_common(<span style="color:#ae81ff">1</span>)[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>]
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/string/">String</a></li>
+      <li><a href="/tags/regular-expression/">regular expression</a></li>
+      <li><a href="/tags/learning-notes/">learning notes</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
