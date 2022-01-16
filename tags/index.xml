@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>杂谈</title>
+      <link>/tags/%E6%9D%82%E8%B0%88/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%9D%82%E8%B0%88/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data Science</title>
       <link>/tags/data-science/</link>

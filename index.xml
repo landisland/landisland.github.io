@@ -6,7 +6,16 @@
     <description>Recent content on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为自己的人生负责</title>
+      <link>/chn/2022-01-16%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B4%9F%E8%B4%A3/</link>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/chn/2022-01-16%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B4%9F%E8%B4%A3/</guid>
+      <description>杂谈</description>
+    </item>
+    
     <item>
       <title>What I Think Data Visualization Is in 2022</title>
       <link>/post/2022-01-15what-i-think-data-visualization-is-in-2022/</link>
@@ -27,10 +36,10 @@
     
     <item>
       <title>Leetcode|Python Some String Problems</title>
-      <link>/notes/2022-01-05leetcodepython-some-string-problems/</link>
+      <link>/post/2022-01-05leetcodepython-some-string-problems/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-05leetcodepython-some-string-problems/</guid>
+      <guid>/post/2022-01-05leetcodepython-some-string-problems/</guid>
       <description>Leetcode problems about string</description>
     </item>
     
@@ -45,29 +54,20 @@
     
     <item>
       <title>Leetcode|Python Linked List Column</title>
-      <link>/notes/2022-01-05leetcodepython-linked-list-column/</link>
+      <link>/post/2022-01-05leetcodepython-linked-list-column/</link>
       <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-05leetcodepython-linked-list-column/</guid>
+      <guid>/post/2022-01-05leetcodepython-linked-list-column/</guid>
       <description>Couple of leetcode problems related to linked list</description>
     </item>
     
     <item>
       <title>Leetcode|Python 856 Score of Parentheses</title>
-      <link>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</link>
+      <link>/post/2022-01-14leetcodepython-856-score-of-parentheses/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
+      <guid>/post/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
       <description>Use stack to tackle this type of matching problem</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/tags/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/</guid>
-      <description>it&amp;rsquo;s a test file.</description>
     </item>
     
     <item>

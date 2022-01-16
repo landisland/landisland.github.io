@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/stack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Leetcode|Python 856 Score of Parentheses</title>
-      <link>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</link>
+      <link>/post/2022-01-14leetcodepython-856-score-of-parentheses/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
+      <guid>/post/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
       <description>Use stack to tackle this type of matching problem</description>
     </item>
     
