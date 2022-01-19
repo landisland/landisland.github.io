@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/chn/</loc>
-    <lastmod>2022-01-16T00:00:00+00:00</lastmod>
+    <loc>/tags/data-science/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-01-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/learning-notes/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-19what-data-analyst-should-be-able-to-do/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/thoughts/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/chn/</loc>
     <lastmod>2022-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/chn/2022-01-16%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B4%9F%E8%B4%A3/</loc>
@@ -17,19 +32,7 @@
     <loc>/tags/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2022-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/data-science/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/data-visualization/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/learning-notes/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/thoughts/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-15what-i-think-data-visualization-is-in-2022/</loc>
