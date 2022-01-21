@@ -2,22 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/cheatsheet/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/learning-notes/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-21cheatsheet-for-basic-python/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-21cheatsheet-for-basic-numpy-library/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/numpy/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/pandas/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/python/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-19cheatsheet-for-basic-sql/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-19what-data-analyst-should-be-able-to-do/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
-    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
+    <loc>/tags/sql/</loc>
     <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/thoughts/</loc>
@@ -45,9 +72,6 @@
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-05leetcodepython-some-string-problems/</loc>

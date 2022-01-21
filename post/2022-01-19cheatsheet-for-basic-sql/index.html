@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Notes|Cheatsheet for Basic SQL Code | Landisland</title>
+<meta name="keywords" content="Data Science, learning notes, SQL" />
+<meta name="description" content="Some basic SQL code summary">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2022-01-19cheatsheet-for-basic-sql/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Notes|Cheatsheet for Basic SQL Code" />
+<meta property="og:description" content="Some basic SQL code summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/2022-01-19cheatsheet-for-basic-sql/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-01-19T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-01-19T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Notes|Cheatsheet for Basic SQL Code"/>
+<meta name="twitter:description" content="Some basic SQL code summary"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes|Cheatsheet for Basic SQL Code",
+      "item": "/post/2022-01-19cheatsheet-for-basic-sql/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Notes|Cheatsheet for Basic SQL Code",
+  "name": "Notes|Cheatsheet for Basic SQL Code",
+  "description": "Some basic SQL code summary",
+  "keywords": [
+    "Data Science", "learning notes", "SQL"
+  ],
+  "articleBody": "Create table CREATE TABLE TABLE_NAME (\"CustomerID\" INT, \"PartySize\" INT) Insert data INSERT INTO TABLE_NAME (ID, NUMBER) VALUES (123,81) INSERT INTO TABLE_NAME (ID, NUMBER) VALUES ((SELECT ID FROM COLUMN_NAME WHERE Email=\"1232@GMAIL.com\"), 4) Look for similarity SELECT C.FirstName, C.LastName, Reservation.Date FROM Reservation JOIN Customer AS C ON C.ID = Reservation.ID WHERE C.LastName LIKE \"Ste%\" Check availablity SELECT COUNT(Books.Title) FROM Loans JOIN Books ON Loads.BookID = Books.BookID WHERE Books.Title = \"Dracula\" AND Loans.ReturnedDate IS NULL Filter _ underscore: a single character wildcard.\n% percent sign: a wildcard for one or more characters.\n* asterisk: represents zero or more characters\nSQL string funcitons SUBSTR( string, start, length ) LENGTH( string ) TRIM( string) #Trimming is case sensitive.  LOWER (string) #Convert the text to lower-case SQL SUBSTR SELECT released, SUBSTR(released, 1, 4) AS Year, SUBSTR(released, 6, 2) AS Month, SUBSTR(released, 9, 2) AS Day, FROM album ORDER BY released SQL TRIM SELECT TRIM(' string ') SELECT LTRIM(' string ') SELECT RTRIM(' string ') SELECT LTRIM('......string......', '.') Some tips   When INSERT data to a table, the unpopulated columns are given a null value rather than left blank.\n  When use DELETE, the asterisk is not necessary for the code to remove a row from a table.\n  E.g:\nDELETE FROM student WHERE id=3; How to just add a null row?  INSERT INTO TABLE_NAME DEFAULT VALUE How can a constraint be placed on a table where a field will contain the value “Mickey” if nothing is provided?  CREATE TABLE People (FirstName TEXT DEFAULT 'Mickey', address TEXT, city TEXT); Set an ID column  CREATE TABLE vehicles (VehicleID INTEGER PRIMARY KEY); Which constraint ensures a column cannot have any duplicate values including null values?  UNIQUE NOT NULL\n Alphabetical order: Z is the highest, and “A” is the lowest.\n  To what does a table schema refer: the number of, titles for, and data types in columns\n  Correct way to represent a string\n  SELECT 'Karen''s Classroom'; Two single quotes are used to represent one apostrophe and strings are represented in single quotes.\n SQLite compares data based on case, so is it important to convert all fields to the same case.\n  What is the standard way to concatenate two strings?\n  Standard : ||\nMySQL: CONCAT()\nWhich option is an example of SQL syntax to add one day to the current day?  SELECT DATETIME('now', '+1 day'); WHERE is used to filter non-aggregation data, HAVING is used to filter aggregation data. How transactions handled within a database: If any of the operations fail, then the entire group of operations fail. What does the CRUD operations acronym stand for?  Create, Read, Update and Delete.\nReferences LinkedIn Learning - SQL Code Challenges\n",
+  "wordCount" : "434",
+  "inLanguage": "en",
+  "datePublished": "2022-01-19T00:00:00Z",
+  "dateModified": "2022-01-19T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2022-01-19cheatsheet-for-basic-sql/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chn" title="Chinese">
+                    <span>Chinese</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Notes|Cheatsheet for Basic SQL Code<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-meta"><span title='2022-01-19 00:00:00 +0000 UTC'>January 19, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#create-table" aria-label="Create table">Create table</a></li>
+                <li>
+                    <a href="#insert-data" aria-label="Insert data">Insert data</a></li>
+                <li>
+                    <a href="#look-for-similarity" aria-label="Look for similarity">Look for similarity</a></li>
+                <li>
+                    <a href="#check-availablity" aria-label="Check availablity">Check availablity</a></li>
+                <li>
+                    <a href="#filter" aria-label="Filter">Filter</a></li>
+                <li>
+                    <a href="#sql-string-funcitons" aria-label="SQL string funcitons">SQL string funcitons</a><ul>
+                        
+                <li>
+                    <a href="#sql-substr" aria-label="SQL SUBSTR">SQL SUBSTR</a></li>
+                <li>
+                    <a href="#sql-trim" aria-label="SQL TRIM">SQL TRIM</a></li></ul>
+                </li>
+                <li>
+                    <a href="#some-tips" aria-label="Some tips">Some tips</a></li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h4 id="create-table">Create table<a hidden class="anchor" aria-hidden="true" href="#create-table">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#a6e22e">TABLE_NAME</span>  (<span style="color:#e6db74">&#34;CustomerID&#34;</span> <span style="color:#66d9ef">INT</span>, <span style="color:#e6db74">&#34;PartySize&#34;</span> <span style="color:#66d9ef">INT</span>) 
+</code></pre></div><h4 id="insert-data">Insert data<a hidden class="anchor" aria-hidden="true" href="#insert-data">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#a6e22e">TABLE_NAME</span>
+(ID, NUMBER)
+<span style="color:#66d9ef">VALUES</span>
+(<span style="color:#ae81ff">123</span>,<span style="color:#ae81ff">81</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#a6e22e">TABLE_NAME</span>
+(ID, NUMBER)
+<span style="color:#66d9ef">VALUES</span>
+((<span style="color:#66d9ef">SELECT</span> ID <span style="color:#66d9ef">FROM</span> COLUMN_NAME <span style="color:#66d9ef">WHERE</span> Email<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1232@GMAIL.com&#34;</span>), <span style="color:#ae81ff">4</span>)
+</code></pre></div><h4 id="look-for-similarity">Look for similarity<a hidden class="anchor" aria-hidden="true" href="#look-for-similarity">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> C.FirstName, C.LastName, Reservation.<span style="color:#66d9ef">Date</span>
+<span style="color:#66d9ef">FROM</span> Reservation
+<span style="color:#66d9ef">JOIN</span> Customer <span style="color:#66d9ef">AS</span> C <span style="color:#66d9ef">ON</span> C.ID <span style="color:#f92672">=</span> Reservation.ID
+<span style="color:#66d9ef">WHERE</span> C.LastName <span style="color:#66d9ef">LIKE</span> <span style="color:#e6db74">&#34;Ste%&#34;</span>
+</code></pre></div><h4 id="check-availablity">Check availablity<a hidden class="anchor" aria-hidden="true" href="#check-availablity">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> <span style="color:#a6e22e">COUNT</span>(Books.Title) <span style="color:#66d9ef">FROM</span> Loans <span style="color:#66d9ef">JOIN</span> Books <span style="color:#66d9ef">ON</span> Loads.BookID <span style="color:#f92672">=</span> Books.BookID
+<span style="color:#66d9ef">WHERE</span> Books.Title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Dracula&#34;</span> <span style="color:#66d9ef">AND</span> Loans.ReturnedDate <span style="color:#66d9ef">IS</span> <span style="color:#66d9ef">NULL</span>
+</code></pre></div><h4 id="filter">Filter<a hidden class="anchor" aria-hidden="true" href="#filter">#</a></h4>
+<p><code>_</code> underscore: a single character wildcard.</p>
+<p><code>%</code> percent sign: a wildcard for one or more characters.</p>
+<p><code>*</code> asterisk: represents zero or more characters</p>
+<h4 id="sql-string-funcitons">SQL string funcitons<a hidden class="anchor" aria-hidden="true" href="#sql-string-funcitons">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#a6e22e">SUBSTR</span>( string, start, length )
+
+<span style="color:#a6e22e">LENGTH</span>( string )
+
+<span style="color:#a6e22e">TRIM</span>( string) <span style="color:#75715e">#Trimming is case sensitive.
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">LOWER</span> (string) <span style="color:#75715e">#Convert the text to lower-case
+</span></code></pre></div><h5 id="sql-substr">SQL SUBSTR<a hidden class="anchor" aria-hidden="true" href="#sql-substr">#</a></h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> released,
+	<span style="color:#a6e22e">SUBSTR</span>(released, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>) <span style="color:#66d9ef">AS</span> <span style="color:#66d9ef">Year</span>,
+	<span style="color:#a6e22e">SUBSTR</span>(released, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">AS</span> Month,
+	<span style="color:#a6e22e">SUBSTR</span>(released, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">2</span>) <span style="color:#66d9ef">AS</span> Day,
+	<span style="color:#66d9ef">FROM</span> album <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> released
+</code></pre></div><h5 id="sql-trim">SQL TRIM<a hidden class="anchor" aria-hidden="true" href="#sql-trim">#</a></h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> <span style="color:#a6e22e">TRIM</span>(<span style="color:#e6db74">&#39;    string     &#39;</span>)
+<span style="color:#66d9ef">SELECT</span> <span style="color:#a6e22e">LTRIM</span>(<span style="color:#e6db74">&#39;    string     &#39;</span>)
+<span style="color:#66d9ef">SELECT</span> <span style="color:#a6e22e">RTRIM</span>(<span style="color:#e6db74">&#39;    string     &#39;</span>)
+<span style="color:#66d9ef">SELECT</span> <span style="color:#a6e22e">LTRIM</span>(<span style="color:#e6db74">&#39;......string......&#39;</span>, <span style="color:#e6db74">&#39;.&#39;</span>)
+</code></pre></div><h4 id="some-tips">Some tips<a hidden class="anchor" aria-hidden="true" href="#some-tips">#</a></h4>
+<ol>
+<li>
+<p>When <code>INSERT</code> data to a table, the unpopulated columns are given a null value rather than left blank.</p>
+</li>
+<li>
+<p>When use <code>DELETE</code>, the asterisk is not necessary for the code to remove a row from a table.</p>
+</li>
+</ol>
+<p>E.g:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">DELETE</span> <span style="color:#66d9ef">FROM</span> student <span style="color:#66d9ef">WHERE</span> id<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>;
+</code></pre></div><ol start="3">
+<li>How to just add a <code>null</code> row?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> TABLE_NAME <span style="color:#66d9ef">DEFAULT</span> VALUE
+</code></pre></div><ol start="4">
+<li>How can a constraint be placed on a table where a field will contain the value &ldquo;Mickey&rdquo; if nothing is provided?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#a6e22e">People</span> (FirstName <span style="color:#66d9ef">TEXT</span> <span style="color:#66d9ef">DEFAULT</span> <span style="color:#e6db74">&#39;Mickey&#39;</span>, address <span style="color:#66d9ef">TEXT</span>, city <span style="color:#66d9ef">TEXT</span>);
+</code></pre></div><ol start="5">
+<li>Set an ID column</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#a6e22e">vehicles</span> (VehicleID <span style="color:#66d9ef">INTEGER</span> <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>);
+</code></pre></div><ol start="6">
+<li>Which constraint ensures a column cannot have any duplicate values including null values?</li>
+</ol>
+<p><code>UNIQUE NOT NULL</code></p>
+<ol start="7">
+<li>
+<p>Alphabetical order: Z is the highest, and &ldquo;A&rdquo; is the lowest.</p>
+</li>
+<li>
+<p>To what does a table schema refer: the number of, titles for, and data types in columns</p>
+</li>
+<li>
+<p>Correct way to represent a string</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> <span style="color:#e6db74">&#39;Karen&#39;&#39;s Classroom&#39;</span>;
+</code></pre></div><p>Two single quotes are used to represent one <strong>apostrophe</strong> and strings are represented in single quotes.</p>
+<ol start="10">
+<li>
+<p>SQLite compares data based on <strong>case</strong>, so is it important to <strong>convert all fields to the same case</strong>.</p>
+</li>
+<li>
+<p>What is the standard way to concatenate two strings?</p>
+</li>
+</ol>
+<p>Standard : <code>||</code></p>
+<p>MySQL: <code>CONCAT()</code></p>
+<ol start="12">
+<li>Which option is an example of SQL syntax to add one day to the current day?</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-mysql" data-lang="mysql"><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DATETIME</span>(<span style="color:#e6db74">&#39;now&#39;</span>, <span style="color:#e6db74">&#39;+1 day&#39;</span>);
+</code></pre></div><ol start="13">
+<li><code>WHERE</code> is used to filter non-aggregation data, <code>HAVING</code> is used to filter aggregation data.</li>
+<li>How transactions handled within a database: If any of the operations fail, then the entire group of operations fail.</li>
+<li>What does the CRUD operations acronym stand for?</li>
+</ol>
+<p>Create, Read, Update and Delete.</p>
+<h4 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h4>
+<p><a href="https://www.linkedin.com/learning/sql-code-challenges/">LinkedIn Learning - SQL Code Challenges</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/data-science/">Data Science</a></li>
+      <li><a href="/tags/learning-notes/">learning notes</a></li>
+      <li><a href="/tags/sql/">SQL</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

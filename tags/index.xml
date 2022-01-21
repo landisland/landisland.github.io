@@ -6,11 +6,20 @@
     <description>Recent content in Tags on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheatsheet</title>
+      <link>/tags/cheatsheet/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cheatsheet/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Data Science</title>
       <link>/tags/data-science/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/data-science/</guid>
       <description></description>
@@ -19,9 +28,45 @@
     <item>
       <title>learning notes</title>
       <link>/tags/learning-notes/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/learning-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numpy</title>
+      <link>/tags/numpy/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>/tags/pandas/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pandas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>/tags/sql/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sql/</guid>
       <description></description>
     </item>
     
@@ -67,15 +112,6 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/heatmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>/tags/python/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/python/</guid>
       <description></description>
     </item>
     

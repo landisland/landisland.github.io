@@ -6,7 +6,34 @@
     <description>Recent content in Python on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes|2022-01-21Cheatsheet for Basic Python Pandas Library</title>
+      <link>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</guid>
+      <description>Some basic Python Pandas library summary</description>
+    </item>
+    
+    <item>
+      <title>Notes|Cheatsheet for Basic Python</title>
+      <link>/post/2022-01-21cheatsheet-for-basic-python/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-21cheatsheet-for-basic-python/</guid>
+      <description>Some basic Python summary</description>
+    </item>
+    
+    <item>
+      <title>Notes|Cheatsheet for Basic Python Numpy Library</title>
+      <link>/post/2022-01-21cheatsheet-for-basic-numpy-library/</link>
+      <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-21cheatsheet-for-basic-numpy-library/</guid>
+      <description>Some basic Python Numby library summary</description>
+    </item>
+    
     <item>
       <title>My YouTube 2018-2022 Watch History in A Heatmap Using GitHubPoster</title>
       <link>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</link>
