@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/cheatsheet/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/data-analysis/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/data-mining/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/data-mining-analysis/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/data-science/</loc>
@@ -14,13 +26,19 @@
     <loc>/tags/learning-notes/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</loc>
+    <loc>/tags/lecture-notes/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-21cheatsheet-for-basic-python/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-21cheatsheet-for-basic-numpy-library/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</loc>
+    <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-01-21notedata-mining-analysis-intro/</loc>
     <lastmod>2022-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/numpy/</loc>
@@ -110,10 +128,10 @@
     <loc>/tags/stack/</loc>
     <lastmod>2022-01-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-01-24noter-for-data-analysis-intro/</loc>
+  </url><url>
     <loc>/about/</loc>
   </url><url>
     <loc>/archives/</loc>
-  </url><url>
-    <loc>/categories/</loc>
   </url>
 </urlset>
