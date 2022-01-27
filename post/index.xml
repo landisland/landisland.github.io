@@ -6,7 +6,34 @@
     <description>Recent content in Posts on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning Process</title>
+      <link>/post/2022-01-26machine-learning-process/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-26machine-learning-process/</guid>
+      <description>Process of machine learning</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes and K-NN</title>
+      <link>/post/2022-01-26naive-bayes-and-k-nn/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-26naive-bayes-and-k-nn/</guid>
+      <description>Process of machine learning</description>
+    </item>
+    
+    <item>
+      <title>Notes|K Nearest Neighbor (KNN)</title>
+      <link>/post/2022-01-25notek-nearest-neighbor-knn/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-25notek-nearest-neighbor-knn/</guid>
+      <description>Summary of K Nearest Neighbor (KNN) algorithm.</description>
+    </item>
+    
     <item>
       <title>Notes|Cheatsheet for Basic Python</title>
       <link>/post/2022-01-21cheatsheet-for-basic-python/</link>
