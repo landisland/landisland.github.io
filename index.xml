@@ -6,7 +6,25 @@
     <description>Recent content on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Add LaTeX Support in Hugo</title>
+      <link>/post/2020-02-01how-to-add-latex-support-in-hugo/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020-02-01how-to-add-latex-support-in-hugo/</guid>
+      <description>How to add KaTex to Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
+      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <description>machine learning perceptron model</description>
+    </item>
+    
     <item>
       <title>Machine Learning Process</title>
       <link>/post/2022-01-26machine-learning-process/</link>

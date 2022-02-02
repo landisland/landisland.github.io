@@ -6,7 +6,16 @@
     <description>Recent content in Data Science on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
+      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <description>machine learning perceptron model</description>
+    </item>
+    
     <item>
       <title>Machine Learning Process</title>
       <link>/post/2022-01-26machine-learning-process/</link>
