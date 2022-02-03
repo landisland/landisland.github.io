@@ -6,7 +6,34 @@
     <description>Recent content in Leetcode on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm|Remove Linked List Elements with dummy head</title>
+      <link>/post/2022-02-03algorithmremove-linked-list-elements/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-03algorithmremove-linked-list-elements/</guid>
+      <description>LeetCode 203. Remove Linked List Elements</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Remove Nth Node From End of List with two pointers</title>
+      <link>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</guid>
+      <description>LeetCode 19.Remove Nth Node From End of List with two pointers</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Swap Nodes in Pairs</title>
+      <link>/post/2022-02-03algorithmswap-nodes-in-pairs/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-03algorithmswap-nodes-in-pairs/</guid>
+      <description>LeetCode 24.Swap Nodes in Pairs</description>
+    </item>
+    
     <item>
       <title>Leetcode|Python Linked List Column</title>
       <link>/post/2022-01-05leetcodepython-linked-list-column/</link>
