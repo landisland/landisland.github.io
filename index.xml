@@ -6,13 +6,76 @@
     <description>Recent content on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm|Basic Theory of List</title>
+      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
+      <description>Basic theory of list</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Binary Search</title>
+      <link>/post/2022-02-02algorithmbinary-search/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmbinary-search/</guid>
+      <description>LeetCode 704. Binary Search</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Minimum Size Subarray Sum with sliding window</title>
+      <link>/post/2022-02-02algorithmminimum-size-subarray-sum/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmminimum-size-subarray-sum/</guid>
+      <description>LeetCode 209.Minimum Size Subarray Sum</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Remove element in list with slow and fast pointers</title>
+      <link>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
+      <description>LeetCode 27. Remove Element</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Spiral Matrix II</title>
+      <link>/post/2022-02-02algorithmspiral-matrix-ii.md/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmspiral-matrix-ii.md/</guid>
+      <description>LeetCode 59. Spiral Matrix II</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Squares of a Sorted Array</title>
+      <link>/post/2022-02-02algorithmsquares-of-a-sorted-array/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
+      <description>LeetCode 977. Squares of a Sorted Array</description>
+    </item>
+    
+    <item>
+      <title>Note|Bias-Variance Tradeoff in Machine Learning</title>
+      <link>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</guid>
+      <description>Talk a bit about variance and bias.</description>
+    </item>
+    
     <item>
       <title>How to Add LaTeX Support in Hugo</title>
-      <link>/post/2020-02-01how-to-add-latex-support-in-hugo/</link>
+      <link>/post/2022-02-01how-to-add-latex-support-in-hugo/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-02-01how-to-add-latex-support-in-hugo/</guid>
+      <guid>/post/2022-02-01how-to-add-latex-support-in-hugo/</guid>
       <description>How to add KaTex to Hugo.</description>
     </item>
     

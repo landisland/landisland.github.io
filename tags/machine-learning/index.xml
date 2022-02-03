@@ -6,7 +6,16 @@
     <description>Recent content in Machine Learning on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Note|Bias-Variance Tradeoff in Machine Learning</title>
+      <link>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</guid>
+      <description>Talk a bit about variance and bias.</description>
+    </item>
+    
     <item>
       <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
       <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>

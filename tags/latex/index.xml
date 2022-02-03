@@ -9,10 +9,10 @@
     <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Add LaTeX Support in Hugo</title>
-      <link>/post/2020-02-01how-to-add-latex-support-in-hugo/</link>
+      <link>/post/2022-02-01how-to-add-latex-support-in-hugo/</link>
       <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2020-02-01how-to-add-latex-support-in-hugo/</guid>
+      <guid>/post/2022-02-01how-to-add-latex-support-in-hugo/</guid>
       <description>How to add KaTex to Hugo.</description>
     </item>
     
