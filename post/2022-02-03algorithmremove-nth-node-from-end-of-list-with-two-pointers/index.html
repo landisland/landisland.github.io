@@ -101,8 +101,8 @@
   "keywords": [
     "Algorithm", "Linked List", "Leetcode"
   ],
-  "articleBody": "From LeetCode 19. Remove Nth Node From End of List with two pointers\nDescription Given the head of a linked list, remove the nth node from the end of the list and return its head.\nSolution Use fast and slow pointers, we first let fast move n steps, and then move fast and slow at the same time, until fast points to the end, then delete the node slow points to.\nclass Solution: def removeNthFromEnd(self, head: ListNode, n: int) - ListNode: head_dummy = ListNode() head_dummy.next = head slow, fast = head_dummy, head_dummy while(n!=0): #fast先往前走n步 fast = fast.next n -= 1 while(fast.next!=None): slow = slow.next fast = fast.next #fast 走到结尾后，slow的下一个节点为倒数第N个节点 slow.next = slow.next.next #删除 return head_dummy.next ",
-  "wordCount" : "115",
+  "articleBody": "From LeetCode 19. Remove Nth Node From End of List with two pointers\nDescription Given the head of a linked list, remove the nth node from the end of the list and return its head.\nSolution Use fast and slow pointers, we first let fast move n steps, and then move fast and slow at the same time, until fast points to the end, then delete the node slow points to.\nclass Solution: def removeNthFromEnd(self, head: ListNode, n: int) - ListNode: head_dummy = ListNode() head_dummy.next = head slow, fast = head_dummy, head_dummy while(n!=0): #fast move n steps forward fast = fast.next n -= 1 while(fast.next!=None): slow = slow.next fast = fast.next #fast comes to th end，the next node of slow pointer points to is the nth node from end of list slow.next = slow.next.next # delete return head_dummy.next ",
+  "wordCount" : "138",
   "inLanguage": "en",
   "datePublished": "2022-02-03T00:00:00Z",
   "dateModified": "2022-02-03T00:00:00Z",
@@ -238,14 +238,14 @@
         head_dummy<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> head
 
         slow, fast <span style="color:#f92672">=</span> head_dummy, head_dummy
-        <span style="color:#66d9ef">while</span>(n<span style="color:#f92672">!=</span><span style="color:#ae81ff">0</span>): <span style="color:#75715e">#fast先往前走n步</span>
+        <span style="color:#66d9ef">while</span>(n<span style="color:#f92672">!=</span><span style="color:#ae81ff">0</span>): <span style="color:#75715e">#fast move n steps forward</span>
             fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next
             n <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>
         <span style="color:#66d9ef">while</span>(fast<span style="color:#f92672">.</span>next<span style="color:#f92672">!=</span><span style="color:#66d9ef">None</span>):
             slow <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next
             fast <span style="color:#f92672">=</span> fast<span style="color:#f92672">.</span>next
-        <span style="color:#75715e">#fast 走到结尾后，slow的下一个节点为倒数第N个节点</span>
-        slow<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next <span style="color:#75715e">#删除</span>
+        <span style="color:#75715e">#fast comes to th end，the next node of slow pointer points to is the nth node from end of list</span>
+        slow<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> slow<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next <span style="color:#75715e"># delete</span>
         <span style="color:#66d9ef">return</span> head_dummy<span style="color:#f92672">.</span>next
 </code></pre></div>
 
