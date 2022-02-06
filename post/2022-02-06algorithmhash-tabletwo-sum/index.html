@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Algorithm|Hash table|Two Sum | Landisland</title>
+<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="description" content="LeetCode 1. Two Sum">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2022-02-06algorithmhash-tabletwo-sum/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Algorithm|Hash table|Two Sum" />
+<meta property="og:description" content="LeetCode 1. Two Sum" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/2022-02-06algorithmhash-tabletwo-sum/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-06T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-02-06T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Algorithm|Hash table|Two Sum"/>
+<meta name="twitter:description" content="LeetCode 1. Two Sum"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Algorithm|Hash table|Two Sum",
+      "item": "/post/2022-02-06algorithmhash-tabletwo-sum/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Algorithm|Hash table|Two Sum",
+  "name": "Algorithm|Hash table|Two Sum",
+  "description": "LeetCode 1. Two Sum",
+  "keywords": [
+    "Algorithm", "Hash table", "Leetcode"
+  ],
+  "articleBody": "From LeetCode 1. Two Sum\nDescription Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have *exactly* one solution, and you may not use the same element twice.\nYou can return the answer in any order.\nSolution First let’s talk about difference between list, set and map\n list  If the number of elements in a list is small, it will waste a lot of memory space   set  Element in a set is just a key.   map  Map can use key to store number, and value to store index    class Solution: def twoSum(self, nums: List[int], target: int) - List[int]: records = dict() # 用枚举更方便，就不需要通过索引再去取当前位置的值 for idx, val in enumerate(nums): if target - val not in records: records[val] = idx else: return [records[target - val], idx] # 如果存在就返回字典记录索引和当前索引 ",
+  "wordCount" : "147",
+  "inLanguage": "en",
+  "datePublished": "2022-02-06T00:00:00Z",
+  "dateModified": "2022-02-06T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2022-02-06algorithmhash-tabletwo-sum/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/chn" title="Chinese">
+                    <span>Chinese</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Algorithm|Hash table|Two Sum
+    </h1>
+    <div class="post-meta"><span title='2022-02-06 00:00:00 +0000 UTC'>February 6, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#description" aria-label="Description">Description</a></li>
+                <li>
+                    <a href="#solution" aria-label="Solution">Solution</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>From <a href="https://leetcode.com/problems/two-sum/">LeetCode 1. Two Sum</a></p>
+<h3 id="description">Description<a hidden class="anchor" aria-hidden="true" href="#description">#</a></h3>
+<p>Given an array of integers <code>nums</code> and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+<p>You may assume that each input would have *<strong>exactly* one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+<p>You can return the answer in any order.</p>
+<h3 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h3>
+<p>First let&rsquo;s talk about difference between <code>list</code>, <code>set</code> and <code>map</code></p>
+<ul>
+<li>list
+<ul>
+<li>If the number of elements in a list is small, it will waste a lot of memory space</li>
+</ul>
+</li>
+<li>set
+<ul>
+<li>Element in a set is just a <code>key</code>.</li>
+</ul>
+</li>
+<li>map
+<ul>
+<li>Map can use <code>key</code> to store number, and <code>value</code> to store index</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">twoSum</span>(self, nums: List[int], target: int) <span style="color:#f92672">-&gt;</span> List[int]:
+        records <span style="color:#f92672">=</span> dict()
+
+        <span style="color:#75715e"># 用枚举更方便，就不需要通过索引再去取当前位置的值</span>
+        <span style="color:#66d9ef">for</span> idx, val <span style="color:#f92672">in</span> enumerate(nums):
+            <span style="color:#66d9ef">if</span> target <span style="color:#f92672">-</span> val <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> records:
+                records[val] <span style="color:#f92672">=</span> idx
+            <span style="color:#66d9ef">else</span>:
+                <span style="color:#66d9ef">return</span> [records[target <span style="color:#f92672">-</span> val], idx] <span style="color:#75715e"># 如果存在就返回字典记录索引和当前索引</span>
+
+</code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/algorithm/">Algorithm</a></li>
+      <li><a href="/tags/hash-table/">Hash table</a></li>
+      <li><a href="/tags/leetcode/">Leetcode</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

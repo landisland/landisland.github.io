@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/list/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Algorithm|Basic Theory of List</title>
-      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
-      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
-      <description>Basic theory of list</description>
-    </item>
-    
-    <item>
       <title>Algorithm|Binary Search</title>
       <link>/post/2022-02-02algorithmbinary-search/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
@@ -26,7 +17,16 @@
     </item>
     
     <item>
-      <title>Algorithm|Minimum Size Subarray Sum with sliding window</title>
+      <title>Algorithm|List|Basic Theory of List</title>
+      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
+      <description>Basic theory of list</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|List|Minimum Size Subarray Sum with sliding window</title>
       <link>/post/2022-02-02algorithmminimum-size-subarray-sum/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>Algorithm|Remove element in list with slow and fast pointers</title>
+      <title>Algorithm|List|Remove element in list with slow and fast pointers</title>
       <link>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>Algorithm|Spiral Matrix II</title>
+      <title>Algorithm|List|Spiral Matrix II</title>
       <link>/post/2022-02-02algorithmspiral-matrix-ii.md/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>Algorithm|Squares of a Sorted Array</title>
+      <title>Algorithm|List|Squares of a Sorted Array</title>
       <link>/post/2022-02-02algorithmsquares-of-a-sorted-array/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       

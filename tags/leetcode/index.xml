@@ -6,9 +6,81 @@
     <description>Recent content in Leetcode on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Algorithm|Remove Linked List Elements with dummy head</title>
+      <title>Algorithm|Hash table|3Sum</title>
+      <link>/post/2022-02-06algorithmhash-table3sum/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmhash-table3sum/</guid>
+      <description>LeetCode 454. 3Sum</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|4Sum II</title>
+      <link>/post/2022-02-6algorithmhash-table4sum-ii/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-6algorithmhash-table4sum-ii/</guid>
+      <description>LeetCode 454. 4Sum II</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|Ransom Note</title>
+      <link>/post/2022-02-06algorithmhash-tableransom-note/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmhash-tableransom-note/</guid>
+      <description>LeetCode 383. Ransom Note</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|Two Sum</title>
+      <link>/post/2022-02-06algorithmhash-tabletwo-sum/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmhash-tabletwo-sum/</guid>
+      <description>LeetCode 1. Two Sum</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|String|Reverse String</title>
+      <link>/post/2022-02-05algorithmstringreverse-string/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-05algorithmstringreverse-string/</guid>
+      <description>LeetCode 344. Reverse String</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|Happy Number</title>
+      <link>/post/2022-02-05algorithmhash-tablehappy-number/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-05algorithmhash-tablehappy-number/</guid>
+      <description>LeetCode 202. Happy Number</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|Intersection of Two Arrays</title>
+      <link>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
+      <description>LeetCode 349. Intersection of Two Arrays</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Hash table|Valid Anagram</title>
+      <link>/post/2022-02-05algorithmhash-tablevalid-anagram/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-05algorithmhash-tablevalid-anagram/</guid>
+      <description>LeetCode 242. Valid Anagram</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|Linked List|Remove Linked List Elements with dummy head</title>
       <link>/post/2022-02-03algorithmremove-linked-list-elements/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -17,7 +89,7 @@
     </item>
     
     <item>
-      <title>Algorithm|Remove Nth Node From End of List with two pointers</title>
+      <title>Algorithm|Linked List|Remove Nth Node From End of List with two pointers</title>
       <link>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -26,7 +98,7 @@
     </item>
     
     <item>
-      <title>Algorithm|Swap Nodes in Pairs</title>
+      <title>Algorithm|Linked List|Swap Nodes in Pairs</title>
       <link>/post/2022-02-03algorithmswap-nodes-in-pairs/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
