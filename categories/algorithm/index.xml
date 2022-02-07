@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Algorithm|Greedy|Assign Cookies</title>
+      <link>/post/2022-02-06algorithmgreedyassign-cookies/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmgreedyassign-cookies/</guid>
+      <description>LeetCode 455. Assign Cookies</description>
+    </item>
+    
+    <item>
       <title>Algorithm|Hash table|3Sum</title>
       <link>/post/2022-02-06algorithmhash-table3sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
@@ -44,12 +53,48 @@
     </item>
     
     <item>
-      <title>Algorithm|String|Reverse String</title>
+      <title>Algorithm|String| Implement strStr() with KMP</title>
+      <link>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
+      <description>LeetCode 28. Implement strStr()</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|String|Replace white space</title>
+      <link>/post/2022-02-06algorithmstringreplace-white-space/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmstringreplace-white-space/</guid>
+      <description>Replace white space</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|String|Reverse String II</title>
+      <link>/post/2022-02-06algorithmstringreverse-string-ii/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmstringreverse-string-ii/</guid>
+      <description>LeetCode 541. Reverse String II</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|String|Reverse String with two pointers</title>
       <link>/post/2022-02-05algorithmstringreverse-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>/post/2022-02-05algorithmstringreverse-string/</guid>
       <description>LeetCode 344. Reverse String</description>
+    </item>
+    
+    <item>
+      <title>Algorithm|String|Reverse Words in a String</title>
+      <link>/post/2022-02-06algorithmstringreverse-words-in-a-string/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
+      <description>LeetCode 151. Reverse Words in a String</description>
     </item>
     
     <item>

@@ -8,6 +8,9 @@
     <loc>/categories/algorithm/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-02-06algorithmgreedyassign-cookies/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/2022-02-06algorithmhash-table3sum/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
@@ -20,10 +23,28 @@
     <loc>/post/2022-02-06algorithmhash-tabletwo-sum/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-02-06algorithmregular-expression/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-02-06algorithmstringreplace-white-space/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/post/2022-02-06algorithmstringreverse-string-ii/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/2022-02-05algorithmstringreverse-string/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-02-06algorithmstringreverse-words-in-a-string/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/greedy/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/hash-table/</loc>
@@ -36,6 +57,12 @@
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/regular-expression/</loc>
+    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/regular-expression/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/string/</loc>
@@ -210,9 +237,6 @@
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-01-05leetcodepython-some-string-problems/</loc>
-    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/regular-expression/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/enfj/</loc>
