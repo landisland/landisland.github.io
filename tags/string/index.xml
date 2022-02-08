@@ -9,55 +9,55 @@
     <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/string/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm|String| Implement strStr() with KMP</title>
-      <link>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
+      <link>/note/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
+      <guid>/note/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
       <description>LeetCode 28. Implement strStr()</description>
     </item>
     
     <item>
       <title>Algorithm|String|Replace white space</title>
-      <link>/post/2022-02-06algorithmstringreplace-white-space/</link>
+      <link>/note/2022-02-06algorithmstringreplace-white-space/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreplace-white-space/</guid>
+      <guid>/note/2022-02-06algorithmstringreplace-white-space/</guid>
       <description>Replace white space</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String II</title>
-      <link>/post/2022-02-06algorithmstringreverse-string-ii/</link>
+      <link>/note/2022-02-06algorithmstringreverse-string-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreverse-string-ii/</guid>
+      <guid>/note/2022-02-06algorithmstringreverse-string-ii/</guid>
       <description>LeetCode 541. Reverse String II</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String with two pointers</title>
-      <link>/post/2022-02-05algorithmstringreverse-string/</link>
+      <link>/note/2022-02-05algorithmstringreverse-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-05algorithmstringreverse-string/</guid>
+      <guid>/note/2022-02-05algorithmstringreverse-string/</guid>
       <description>LeetCode 344. Reverse String</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse Words in a String</title>
-      <link>/post/2022-02-06algorithmstringreverse-words-in-a-string/</link>
+      <link>/note/2022-02-06algorithmstringreverse-words-in-a-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
+      <guid>/note/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
       <description>LeetCode 151. Reverse Words in a String</description>
     </item>
     
     <item>
       <title>Leetcode|Python Some String Problems</title>
-      <link>/post/2022-01-05leetcodepython-some-string-problems/</link>
+      <link>/note/2022-01-05leetcodepython-some-string-problems/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-05leetcodepython-some-string-problems/</guid>
+      <guid>/note/2022-01-05leetcodepython-some-string-problems/</guid>
       <description>Leetcode problems about string</description>
     </item>
     

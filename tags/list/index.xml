@@ -9,55 +9,55 @@
     <lastBuildDate>Wed, 02 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/list/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm|Binary Search</title>
-      <link>/post/2022-02-02algorithmbinary-search/</link>
+      <link>/note/2022-02-02algorithmbinary-search/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmbinary-search/</guid>
+      <guid>/note/2022-02-02algorithmbinary-search/</guid>
       <description>LeetCode 704. Binary Search</description>
     </item>
     
     <item>
       <title>Algorithm|List|Basic Theory of List</title>
-      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
+      <link>/note/2022-02-02algorithmbasic-theory-of-list/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
+      <guid>/note/2022-02-02algorithmbasic-theory-of-list/</guid>
       <description>Basic theory of list</description>
     </item>
     
     <item>
       <title>Algorithm|List|Minimum Size Subarray Sum with sliding window</title>
-      <link>/post/2022-02-02algorithmminimum-size-subarray-sum/</link>
+      <link>/note/2022-02-02algorithmminimum-size-subarray-sum/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmminimum-size-subarray-sum/</guid>
+      <guid>/note/2022-02-02algorithmminimum-size-subarray-sum/</guid>
       <description>LeetCode 209.Minimum Size Subarray Sum</description>
     </item>
     
     <item>
       <title>Algorithm|List|Remove element in list with slow and fast pointers</title>
-      <link>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
+      <link>/note/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
+      <guid>/note/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
       <description>LeetCode 27. Remove Element</description>
     </item>
     
     <item>
       <title>Algorithm|List|Spiral Matrix II</title>
-      <link>/post/2022-02-02algorithmspiral-matrix-ii.md/</link>
+      <link>/note/2022-02-02algorithmspiral-matrix-ii.md/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmspiral-matrix-ii.md/</guid>
+      <guid>/note/2022-02-02algorithmspiral-matrix-ii.md/</guid>
       <description>LeetCode 59. Spiral Matrix II</description>
     </item>
     
     <item>
       <title>Algorithm|List|Squares of a Sorted Array</title>
-      <link>/post/2022-02-02algorithmsquares-of-a-sorted-array/</link>
+      <link>/note/2022-02-02algorithmsquares-of-a-sorted-array/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
+      <guid>/note/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
       <description>LeetCode 977. Squares of a Sorted Array</description>
     </item>
     

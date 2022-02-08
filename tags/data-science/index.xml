@@ -9,91 +9,91 @@
     <lastBuildDate>Thu, 27 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
-      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <link>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <guid>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
       <description>machine learning perceptron model</description>
     </item>
     
     <item>
       <title>Machine Learning Process</title>
-      <link>/post/2022-01-26machine-learning-process/</link>
+      <link>/note/2022-01-26machine-learning-process/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26machine-learning-process/</guid>
+      <guid>/note/2022-01-26machine-learning-process/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Naive Bayes and K-NN</title>
-      <link>/post/2022-01-26naive-bayes-and-k-nn/</link>
+      <link>/note/2022-01-26naive-bayes-and-k-nn/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26naive-bayes-and-k-nn/</guid>
+      <guid>/note/2022-01-26naive-bayes-and-k-nn/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Notes|K Nearest Neighbor (KNN)</title>
-      <link>/post/2022-01-25notek-nearest-neighbor-knn/</link>
+      <link>/note/2022-01-25notek-nearest-neighbor-knn/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-25notek-nearest-neighbor-knn/</guid>
+      <guid>/note/2022-01-25notek-nearest-neighbor-knn/</guid>
       <description>Summary of K Nearest Neighbor (KNN) algorithm.</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-python/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-python/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-python/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-python/</guid>
       <description>Some basic Python summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python Numpy Library</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-numpy-library/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-numpy-library/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-numpy-library/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-numpy-library/</guid>
       <description>Some basic Python Numby library summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python Pandas Library</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-python-pandas-library/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-python-pandas-library/</guid>
       <description>Some basic Python Pandas library summary</description>
     </item>
     
     <item>
       <title>Note|Data Mining &amp; Analysis Intro Ep.0</title>
-      <link>/post/2022-01-21notedata-mining-analysis-intro/</link>
+      <link>/note/2022-01-21notedata-mining-analysis-intro/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21notedata-mining-analysis-intro/</guid>
+      <guid>/note/2022-01-21notedata-mining-analysis-intro/</guid>
       <description>Some basic Python summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic SQL Code</title>
-      <link>/post/2022-01-19cheatsheet-for-basic-sql/</link>
+      <link>/note/2022-01-19cheatsheet-for-basic-sql/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-19cheatsheet-for-basic-sql/</guid>
+      <guid>/note/2022-01-19cheatsheet-for-basic-sql/</guid>
       <description>Some basic SQL code summary</description>
     </item>
     
     <item>
       <title>Notes|What A Qualified Data Analyst Should be Able to Do</title>
-      <link>/post/2022-01-19what-data-analyst-should-be-able-to-do/</link>
+      <link>/note/2022-01-19what-data-analyst-should-be-able-to-do/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-19what-data-analyst-should-be-able-to-do/</guid>
+      <guid>/note/2022-01-19what-data-analyst-should-be-able-to-do/</guid>
       <description>Four main points for a qualified data analyst should be able to do.</description>
     </item>
     

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Note|Data Mining &amp; Analysis Intro Ep.0 | Landisland</title>
+<meta name="keywords" content="Data Science, learning notes, Python, Lecture notes, Data Mining, Data Analysis" />
+<meta name="description" content="Some basic Python summary">
+<meta name="author" content="">
+<link rel="canonical" href="/note/2022-01-21notedata-mining-analysis-intro/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Note|Data Mining &amp; Analysis Intro Ep.0" />
+<meta property="og:description" content="Some basic Python summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/note/2022-01-21notedata-mining-analysis-intro/" /><meta property="article:section" content="note" />
+<meta property="article:published_time" content="2022-01-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-01-21T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Note|Data Mining &amp; Analysis Intro Ep.0"/>
+<meta name="twitter:description" content="Some basic Python summary"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Notes",
+      "item": "/note/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Note|Data Mining \u0026 Analysis Intro Ep.0",
+      "item": "/note/2022-01-21notedata-mining-analysis-intro/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Note|Data Mining \u0026 Analysis Intro Ep.0",
+  "name": "Note|Data Mining \u0026 Analysis Intro Ep.0",
+  "description": "Some basic Python summary",
+  "keywords": [
+    "Data Science", "learning notes", "Python", "Lecture notes", "Data Mining", "Data Analysis"
+  ],
+  "articleBody": "Machine Learning Supervised learning \u0026 Unsupervised learning Starting Point Outcome measurement $Y$ (Also dependent variable, response, target )\n In the regression problem, $Y$ is quantitative. In the classification problem, $Y$ takes values in a finite, unordered set.  Vector of $p$ predictor measurements $X$ (also called inputs, regressors, covariates, features, independent variables)\nUnsupervised Learning Starting Point  No outcome varibale, just a set of predictors (features) measured on a set of samples. Objective is more fuzzy - find groups of samples that behave similarly, find features that behave similarly, find linear combinations of features with the most variation. Difficult to know how well you are doing. Different from supervised learning, but can be useful as a pre-processing step for supervised learning or as an exploratory analysis tool  Our objectives  Accurately predict unseen test cases. Understand which inputs affect the outcome, and how. Access the quality of our predictions and inferences.  ML is to generalize knowledge beyond the training examples\nPhilosophy   It is important to understand the ideas behind the various techniques, in order to know how and when to use them.\n  One has to understand the simpler methods first, in order to grasp the more sophisticated ones.\n  It is important to accurately assess the performance of a method, to know how well or how badly it is working [simple methods often perform as well as fancier ones!]\n  Supervised learning : regression problems Find feature and response $X$(Independent variable, feature, covariate, input): TV, Radio, Newspaper\n$Y$(Dependent variable, target, response, output): Sales\nWe try to build a model: $$ \\text{Sales} \\approx f(\\text{TV, Radio, Newspaper}) $$ We can refer to the input vector collectively as: $$ X=\\left(\\begin{array}{l} X_{1} \\ X_{2} \\ X_{3} \\end{array}\\right) $$ Now we can write our model as: $$ Y=f(x) + \\varepsilon $$ $\\varepsilon$ captures measurement errors and other discrepancies.\nWhat is regression function? The ideal $f(x)=E(Y|X=x)$ Is called the regression function.\nWhat is our goal? $f(x)$ is optimal predictor of $Y$ with regard to mean-squared prediction error $$ \\text{Minimize}:E\\left[(Y-g(X))^{2} \\mid X=x\\right] $$\nHow to estimate $f$ ? Typically we have few if any data points with $X=4$ exactly, so we cannot compute $E(Y|X=x)$ !\nWhat we do is to relax the definition and let:\n$$ \\hat{f}(x)=\\operatorname{Ave}(Y \\mid X \\in \\mathcal{N}(x)) $$ where $\\mathcal{N}(x)$ is some neighborhood of $x$.\nBuild linear model $$ f_{L}(X)=\\beta_{0}+\\beta_{1} X_{1}+\\beta_{2} X_{2}+\\cdots+\\beta_{p} X_{p} $$\n  A linear model is specified in terms of $p+1$ parameters $\\beta_0,\\beta_1,…,\\beta_p$\n  We estimate the parameters by fitting the model to training data\n  Although it is almost never correct, a linear model often serves as a good and interpretable approximation to the unknown true function $f(X)$\n  Interpretability and Flexibility  Why under-fitting is bad?  If a model is under-fitting, it means the model even cannot fit the training data, let alone the testing data or use it in real-world cases   Why over-fitting is bad?  Although the model can fit training data well, but it’s too “well”, we cannot use it in other cases.   How do we know when the fit is just right? Parsimony v.s. black box  We often prefer a simpler model involving fewer variables over a black-box predictor involving them all.    Accessing Model Accuracy Suppose we fit a model $\\hat{f}(x)$ to some training data $\\operatorname{Tr}=\\left{x_{i}, y_{i}\\right}_{1}^{n}$, and we wish to see how it performs.\nWe could compute the average squared prediction error over $\\text{Tr}$: $$ M S E_{T r}=A v e_{i \\in \\operatorname{Tr}}\\left[y_{i}-\\hat{f}\\left(x_{i}\\right)\\right]^{2} $$ And then we compute it using fresh test data $\\operatorname{Te}=\\left{x_{i}, y_{i}\\right}{1}^{n}$ : $$ M S E{T e}=A v e_{i \\in \\operatorname{Te}}\\left[y_{i}-\\hat{f}\\left(x_{i}\\right)\\right]^{2} $$ Black curve is truth. Red curve on right is $M S E_{T e}$. Grey curve is $M S E_{T r}$.\nOrange, blue and green curves/squares correspond to fits of different flexibility.\nChoose the flexibility based on average test error amounts to a bias-variance trade-off.\nSupervised learning : classification problems Here the response variable $Y$ is qualitative , e.g. email is one of $\\C = \\text{(spam, ham)}$, ham is good email ; digit class is one of $\\C = {0, 1, …,9}$.\nOur goals  Build a classifier $C(X)$ That assigns a class label from $\\C$ to a future unlabeled observation $X$ Access the uncertainty in each classification Understand the roles of the different predictors among $X=X_1, X_2,…,X_p$  Bayes optimal classifier Suppose the $K$ elements in $\\C$ Are numbered $1,2,…,K$, Let: $$ p_k(x)=\\text{Pr}(Y=K|X=x),k=1,2,…K $$ These are the conditional/posterior class probabilities at x. Suppose those class probabilities are known, the Bayes optimal classifier at $x$ is: $$ C(x)=j \\text { if } p_{j}(x)=\\max \\left{p_{1}(x), p_{2}(x), \\ldots, p_{K}(x)\\right} $$\n",
+  "wordCount" : "747",
+  "inLanguage": "en",
+  "datePublished": "2022-01-21T00:00:00Z",
+  "dateModified": "2022-01-21T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/note/2022-01-21notedata-mining-analysis-intro/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="/notes" title="Note">
+                    <span>Note</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Note|Data Mining &amp; Analysis Intro Ep.0<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>
+    </h1>
+    <div class="post-meta"><span title='2022-01-21 00:00:00 +0000 UTC'>January 21, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#machine-learning" aria-label="Machine Learning">Machine Learning</a><ul>
+                        
+                <li>
+                    <a href="#supervised-learning--unsupervised-learning" aria-label="Supervised learning &amp;amp; Unsupervised learning">Supervised learning &amp; Unsupervised learning</a><ul>
+                        
+                <li>
+                    <a href="#starting-point" aria-label="Starting Point">Starting Point</a></li></ul>
+                </li>
+                <li>
+                    <a href="#unsupervised-learning" aria-label="Unsupervised Learning">Unsupervised Learning</a><ul>
+                        
+                <li>
+                    <a href="#starting-point-1" aria-label="Starting Point">Starting Point</a></li></ul>
+                </li>
+                <li>
+                    <a href="#our-objectives" aria-label="Our objectives">Our objectives</a></li>
+                <li>
+                    <a href="#philosophy" aria-label="Philosophy">Philosophy</a></li></ul>
+                </li>
+                <li>
+                    <a href="#supervised-learning--regression-problems" aria-label="Supervised learning : regression problems">Supervised learning : regression problems</a><ul>
+                        
+                <li>
+                    <a href="#find-feature-and-response" aria-label="Find feature and response">Find feature and response</a><ul>
+                        
+                <li>
+                    <a href="#what-is-regression-function" aria-label="What is regression function?">What is regression function?</a></li>
+                <li>
+                    <a href="#what-is-our-goal" aria-label="What is our goal?">What is our goal?</a></li></ul>
+                </li>
+                <li>
+                    <a href="#how-to-estimate-f-" aria-label="How to estimate $f$ ?">How to estimate $f$ ?</a></li>
+                <li>
+                    <a href="#build-linear-model" aria-label="Build linear model">Build linear model</a></li>
+                <li>
+                    <a href="#interpretability-and-flexibility" aria-label="Interpretability and Flexibility">Interpretability and Flexibility</a></li>
+                <li>
+                    <a href="#accessing-model-accuracy" aria-label="Accessing Model Accuracy">Accessing Model Accuracy</a></li></ul>
+                </li>
+                <li>
+                    <a href="#supervised-learning--classification-problems" aria-label="Supervised learning : classification problems">Supervised learning : classification problems</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#our-goals" aria-label="Our goals">Our goals</a></li>
+                <li>
+                    <a href="#bayes-optimal-classifier" aria-label="Bayes optimal classifier">Bayes optimal classifier</a>
+                </li>
+            </ul>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="machine-learning">Machine Learning<a hidden class="anchor" aria-hidden="true" href="#machine-learning">#</a></h1>
+<h2 id="supervised-learning--unsupervised-learning">Supervised learning &amp; Unsupervised learning<a hidden class="anchor" aria-hidden="true" href="#supervised-learning--unsupervised-learning">#</a></h2>
+<h3 id="starting-point">Starting Point<a hidden class="anchor" aria-hidden="true" href="#starting-point">#</a></h3>
+<p><strong>Outcome measurement $Y$ (Also dependent variable, response, target )</strong></p>
+<ul>
+<li>In the <strong>regression</strong> problem, $Y$ is quantitative.</li>
+<li>In the <strong>classification</strong> problem, $Y$ takes values in a finite, unordered set.</li>
+</ul>
+<p><strong>Vector of $p$ predictor measurements $X$ (also called inputs, regressors, covariates, features, independent variables)</strong></p>
+<h2 id="unsupervised-learning">Unsupervised Learning<a hidden class="anchor" aria-hidden="true" href="#unsupervised-learning">#</a></h2>
+<h3 id="starting-point-1">Starting Point<a hidden class="anchor" aria-hidden="true" href="#starting-point-1">#</a></h3>
+<ul>
+<li>No outcome varibale, just a set of predictors (features) measured on a set of samples.</li>
+<li>Objective is more fuzzy - find groups of samples that behave similarly, find features that behave similarly, find linear combinations of features with the most variation.</li>
+<li>Difficult to know how well you are doing.</li>
+<li>Different from supervised learning, but can be useful as <strong>a pre-processing step for supervised learning</strong> or as an exploratory analysis tool</li>
+</ul>
+<h2 id="our-objectives">Our objectives<a hidden class="anchor" aria-hidden="true" href="#our-objectives">#</a></h2>
+<ul>
+<li>Accurately predict unseen test cases.</li>
+<li>Understand which inputs affect the outcome, and how.</li>
+<li>Access the quality of our predictions and inferences.</li>
+</ul>
+<p><strong>ML is to generalize knowledge beyond the training examples</strong></p>
+<h2 id="philosophy">Philosophy<a hidden class="anchor" aria-hidden="true" href="#philosophy">#</a></h2>
+<ul>
+<li>
+<p>It is important to understand the ideas behind the various techniques, in order to know how and when to use them.</p>
+</li>
+<li>
+<p>One has to understand the simpler methods first, in order to grasp the more sophisticated ones.</p>
+</li>
+<li>
+<p>It is important to accurately assess the performance of a method, to know how well or how badly it is working [<strong>simple methods often perform as well as fancier ones!</strong>]</p>
+</li>
+</ul>
+<h1 id="supervised-learning--regression-problems">Supervised learning : regression problems<a hidden class="anchor" aria-hidden="true" href="#supervised-learning--regression-problems">#</a></h1>
+<!-- raw HTML omitted -->
+<h2 id="find-feature-and-response">Find feature and response<a hidden class="anchor" aria-hidden="true" href="#find-feature-and-response">#</a></h2>
+<!-- raw HTML omitted -->
+<p>$X$(Independent variable, feature, covariate, input): TV, Radio, Newspaper</p>
+<p>$Y$(Dependent variable, target, response, output): Sales</p>
+<p>We try to build a model:
+$$
+\text{Sales} \approx f(\text{TV, Radio, Newspaper})
+$$
+We can refer to the input vector collectively as:
+$$
+X=\left(\begin{array}{l}
+X_{1} \
+X_{2} \
+X_{3}
+\end{array}\right)
+$$
+Now we can write our model as:
+$$
+Y=f(x) + \varepsilon
+$$
+$\varepsilon$ captures measurement errors and other discrepancies.</p>
+<h3 id="what-is-regression-function">What is regression function?<a hidden class="anchor" aria-hidden="true" href="#what-is-regression-function">#</a></h3>
+<p>The ideal $f(x)=E(Y|X=x)$ Is called the <strong>regression function</strong>.</p>
+<h3 id="what-is-our-goal">What is our goal?<a hidden class="anchor" aria-hidden="true" href="#what-is-our-goal">#</a></h3>
+<p>$f(x)$ is optimal predictor of $Y$ with regard to mean-squared  prediction error
+$$
+\text{Minimize}:E\left[(Y-g(X))^{2} \mid X=x\right]
+$$</p>
+<h2 id="how-to-estimate-f-">How to estimate $f$ ?<a hidden class="anchor" aria-hidden="true" href="#how-to-estimate-f-">#</a></h2>
+<!-- raw HTML omitted -->
+<p>Typically we have few if any data points with $X=4$ exactly, so we <strong>cannot compute</strong> $E(Y|X=x)$ !</p>
+<p><strong>What we do is to relax the definition and let:</strong></p>
+<p>$$
+\hat{f}(x)=\operatorname{Ave}(Y \mid X \in \mathcal{N}(x))
+$$
+where $\mathcal{N}(x)$ is some neighborhood of $x$.</p>
+<h2 id="build-linear-model">Build linear model<a hidden class="anchor" aria-hidden="true" href="#build-linear-model">#</a></h2>
+<p>$$
+f_{L}(X)=\beta_{0}+\beta_{1} X_{1}+\beta_{2} X_{2}+\cdots+\beta_{p} X_{p}
+$$</p>
+<ul>
+<li>
+<p>A linear model is specified in terms of $p+1$ parameters $\beta_0,\beta_1,&hellip;,\beta_p$</p>
+</li>
+<li>
+<p>We estimate the parameters by fitting the model to training data</p>
+</li>
+<li>
+<p>Although it is almost never correct, a linear model often serves as a good and interpretable approximation to the unknown true function $f(X)$</p>
+</li>
+</ul>
+<h2 id="interpretability-and-flexibility">Interpretability and Flexibility<a hidden class="anchor" aria-hidden="true" href="#interpretability-and-flexibility">#</a></h2>
+<!-- raw HTML omitted -->
+<ul>
+<li>Why under-fitting is bad?
+<ul>
+<li>If a model is under-fitting, it means the model even cannot fit the training data, let alone the testing data or use it in real-world cases</li>
+</ul>
+</li>
+<li>Why over-fitting is bad?
+<ul>
+<li>Although the model can fit training data well, but it&rsquo;s too &ldquo;well&rdquo;, we cannot use it in other cases.</li>
+</ul>
+</li>
+<li>How do we know when the fit is just right?</li>
+<li>Parsimony v.s. black box
+<ul>
+<li>We often prefer a simpler model involving fewer variables over a black-box predictor involving them all.</li>
+</ul>
+</li>
+</ul>
+<h2 id="accessing-model-accuracy">Accessing Model Accuracy<a hidden class="anchor" aria-hidden="true" href="#accessing-model-accuracy">#</a></h2>
+<p>Suppose we fit a model $\hat{f}(x)$ to some training data $\operatorname{Tr}=\left{x_{i}, y_{i}\right}_{1}^{n}$, and we wish to see how it performs.</p>
+<p>We could compute the average squared prediction error over $\text{Tr}$:
+$$
+M S E_{T r}=A v e_{i \in \operatorname{Tr}}\left[y_{i}-\hat{f}\left(x_{i}\right)\right]^{2}
+$$
+And then we compute it using fresh <strong>test</strong> data $\operatorname{Te}=\left{x_{i}, y_{i}\right}<em>{1}^{n}$ :
+$$
+M S E</em>{T e}=A v e_{i \in \operatorname{Te}}\left[y_{i}-\hat{f}\left(x_{i}\right)\right]^{2}
+$$
+<!-- raw HTML omitted --></p>
+<p>Black curve is truth. Red curve on right is $M S E_{T e}$. Grey curve is $M S E_{T r}$.</p>
+<p>Orange, blue and green curves/squares correspond to fits of different flexibility.</p>
+<p><strong>Choose the flexibility</strong> based on average test error amounts to a bias-variance trade-off.</p>
+<h1 id="supervised-learning--classification-problems">Supervised learning : classification problems<a hidden class="anchor" aria-hidden="true" href="#supervised-learning--classification-problems">#</a></h1>
+<p>Here the response variable $Y$ is <strong>qualitative</strong> , e.g. email is one of $\C = \text{(spam, ham)}$, ham is good email ; digit class is one of $\C = {0, 1, &hellip;,9}$.</p>
+<h3 id="our-goals">Our goals<a hidden class="anchor" aria-hidden="true" href="#our-goals">#</a></h3>
+<ul>
+<li>Build a classifier $C(X)$ That <strong>assigns</strong> a class <strong>label</strong> from $\C$ to a future <strong>unlabeled</strong> <strong>observation</strong> $X$</li>
+<li><strong>Access the uncertainty</strong> in each classification</li>
+<li><strong>Understand the roles of the different predictors</strong> among $X=X_1, X_2,&hellip;,X_p$</li>
+</ul>
+<h3 id="bayes-optimal-classifier">Bayes optimal classifier<a hidden class="anchor" aria-hidden="true" href="#bayes-optimal-classifier">#</a></h3>
+<p>Suppose the $K$ elements in $\C$ Are numbered $1,2,&hellip;,K$, Let:
+$$
+p_k(x)=\text{Pr}(Y=K|X=x),k=1,2,&hellip;K
+$$
+These are the conditional/posterior class probabilities at x. Suppose those class probabilities are known, the Bayes optimal classifier at $x$ is:
+$$
+C(x)=j \text { if } p_{j}(x)=\max \left{p_{1}(x), p_{2}(x), \ldots, p_{K}(x)\right}
+$$</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/data-science/">Data Science</a></li>
+      <li><a href="/tags/learning-notes/">learning notes</a></li>
+      <li><a href="/tags/python/">Python</a></li>
+      <li><a href="/tags/lecture-notes/">Lecture notes</a></li>
+      <li><a href="/tags/data-mining/">Data Mining</a></li>
+      <li><a href="/tags/data-analysis/">Data Analysis</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

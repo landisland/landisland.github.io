@@ -18,37 +18,37 @@
     
     <item>
       <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
-      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <link>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <guid>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
       <description>machine learning perceptron model</description>
     </item>
     
     <item>
       <title>Machine Learning Process</title>
-      <link>/post/2022-01-26machine-learning-process/</link>
+      <link>/note/2022-01-26machine-learning-process/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26machine-learning-process/</guid>
+      <guid>/note/2022-01-26machine-learning-process/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Naive Bayes and K-NN</title>
-      <link>/post/2022-01-26naive-bayes-and-k-nn/</link>
+      <link>/note/2022-01-26naive-bayes-and-k-nn/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26naive-bayes-and-k-nn/</guid>
+      <guid>/note/2022-01-26naive-bayes-and-k-nn/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Notes|K Nearest Neighbor (KNN)</title>
-      <link>/post/2022-01-25notek-nearest-neighbor-knn/</link>
+      <link>/note/2022-01-25notek-nearest-neighbor-knn/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-25notek-nearest-neighbor-knn/</guid>
+      <guid>/note/2022-01-25notek-nearest-neighbor-knn/</guid>
       <description>Summary of K Nearest Neighbor (KNN) algorithm.</description>
     </item>
     

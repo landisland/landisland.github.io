@@ -9,244 +9,244 @@
     <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm|Greedy|Assign Cookies</title>
-      <link>/post/2022-02-06algorithmgreedyassign-cookies/</link>
+      <link>/note/2022-02-06algorithmgreedyassign-cookies/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmgreedyassign-cookies/</guid>
+      <guid>/note/2022-02-06algorithmgreedyassign-cookies/</guid>
       <description>LeetCode 455. Assign Cookies</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|3Sum</title>
-      <link>/post/2022-02-06algorithmhash-table3sum/</link>
+      <link>/note/2022-02-06algorithmhash-table3sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmhash-table3sum/</guid>
+      <guid>/note/2022-02-06algorithmhash-table3sum/</guid>
       <description>LeetCode 454. 3Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|4Sum II</title>
-      <link>/post/2022-02-6algorithmhash-table4sum-ii/</link>
+      <link>/note/2022-02-6algorithmhash-table4sum-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-6algorithmhash-table4sum-ii/</guid>
+      <guid>/note/2022-02-6algorithmhash-table4sum-ii/</guid>
       <description>LeetCode 454. 4Sum II</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Ransom Note</title>
-      <link>/post/2022-02-06algorithmhash-tableransom-note/</link>
+      <link>/note/2022-02-06algorithmhash-tableransom-note/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmhash-tableransom-note/</guid>
+      <guid>/note/2022-02-06algorithmhash-tableransom-note/</guid>
       <description>LeetCode 383. Ransom Note</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Two Sum</title>
-      <link>/post/2022-02-06algorithmhash-tabletwo-sum/</link>
+      <link>/note/2022-02-06algorithmhash-tabletwo-sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmhash-tabletwo-sum/</guid>
+      <guid>/note/2022-02-06algorithmhash-tabletwo-sum/</guid>
       <description>LeetCode 1. Two Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Regular Expression</title>
-      <link>/post/2022-02-06algorithmregular-expression/</link>
+      <link>/note/2022-02-06algorithmregular-expression/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmregular-expression/</guid>
+      <guid>/note/2022-02-06algorithmregular-expression/</guid>
       <description>Summary of Regular Expression</description>
     </item>
     
     <item>
       <title>Algorithm|String| Implement strStr() with KMP</title>
-      <link>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
+      <link>/note/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
+      <guid>/note/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
       <description>LeetCode 28. Implement strStr()</description>
     </item>
     
     <item>
       <title>Algorithm|String|Replace white space</title>
-      <link>/post/2022-02-06algorithmstringreplace-white-space/</link>
+      <link>/note/2022-02-06algorithmstringreplace-white-space/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreplace-white-space/</guid>
+      <guid>/note/2022-02-06algorithmstringreplace-white-space/</guid>
       <description>Replace white space</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String II</title>
-      <link>/post/2022-02-06algorithmstringreverse-string-ii/</link>
+      <link>/note/2022-02-06algorithmstringreverse-string-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreverse-string-ii/</guid>
+      <guid>/note/2022-02-06algorithmstringreverse-string-ii/</guid>
       <description>LeetCode 541. Reverse String II</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String with two pointers</title>
-      <link>/post/2022-02-05algorithmstringreverse-string/</link>
+      <link>/note/2022-02-05algorithmstringreverse-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-05algorithmstringreverse-string/</guid>
+      <guid>/note/2022-02-05algorithmstringreverse-string/</guid>
       <description>LeetCode 344. Reverse String</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse Words in a String</title>
-      <link>/post/2022-02-06algorithmstringreverse-words-in-a-string/</link>
+      <link>/note/2022-02-06algorithmstringreverse-words-in-a-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
+      <guid>/note/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
       <description>LeetCode 151. Reverse Words in a String</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Happy Number</title>
-      <link>/post/2022-02-05algorithmhash-tablehappy-number/</link>
+      <link>/note/2022-02-05algorithmhash-tablehappy-number/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-05algorithmhash-tablehappy-number/</guid>
+      <guid>/note/2022-02-05algorithmhash-tablehappy-number/</guid>
       <description>LeetCode 202. Happy Number</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Intersection of Two Arrays</title>
-      <link>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
+      <link>/note/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
+      <guid>/note/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
       <description>LeetCode 349. Intersection of Two Arrays</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Valid Anagram</title>
-      <link>/post/2022-02-05algorithmhash-tablevalid-anagram/</link>
+      <link>/note/2022-02-05algorithmhash-tablevalid-anagram/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-05algorithmhash-tablevalid-anagram/</guid>
+      <guid>/note/2022-02-05algorithmhash-tablevalid-anagram/</guid>
       <description>LeetCode 242. Valid Anagram</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Basic of Linked List</title>
-      <link>/post/2022-02-03algorithmbasic-of-linked-list/</link>
+      <link>/note/2022-02-03algorithmbasic-of-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithmbasic-of-linked-list/</guid>
+      <guid>/note/2022-02-03algorithmbasic-of-linked-list/</guid>
       <description>Basic knowledge of Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Design Linked List</title>
-      <link>/post/2022-02-03algorithmdesign-linked-list/</link>
+      <link>/note/2022-02-03algorithmdesign-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithmdesign-linked-list/</guid>
+      <guid>/note/2022-02-03algorithmdesign-linked-list/</guid>
       <description>LeetCode 707. Design Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Remove Linked List Elements with dummy head</title>
-      <link>/post/2022-02-03algorithmremove-linked-list-elements/</link>
+      <link>/note/2022-02-03algorithmremove-linked-list-elements/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithmremove-linked-list-elements/</guid>
+      <guid>/note/2022-02-03algorithmremove-linked-list-elements/</guid>
       <description>LeetCode 203. Remove Linked List Elements</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Remove Nth Node From End of List with two pointers</title>
-      <link>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
+      <link>/note/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</guid>
+      <guid>/note/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</guid>
       <description>LeetCode 19.Remove Nth Node From End of List with two pointers</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Reverse Linked List with two pointers</title>
-      <link>/post/2022-02-03algorithm-reverse-linked-list/</link>
+      <link>/note/2022-02-03algorithm-reverse-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithm-reverse-linked-list/</guid>
+      <guid>/note/2022-02-03algorithm-reverse-linked-list/</guid>
       <description>Leetcode 206 Reverse Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Swap Nodes in Pairs</title>
-      <link>/post/2022-02-03algorithmswap-nodes-in-pairs/</link>
+      <link>/note/2022-02-03algorithmswap-nodes-in-pairs/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03algorithmswap-nodes-in-pairs/</guid>
+      <guid>/note/2022-02-03algorithmswap-nodes-in-pairs/</guid>
       <description>LeetCode 24.Swap Nodes in Pairs</description>
     </item>
     
     <item>
       <title>HTML|Day01-05 Introduction</title>
-      <link>/post/2022-02-03htmlday01introduction/</link>
+      <link>/note/2022-02-03htmlday01introduction/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-03htmlday01introduction/</guid>
+      <guid>/note/2022-02-03htmlday01introduction/</guid>
       <description>Intro to HTML</description>
     </item>
     
     <item>
       <title>Algorithm|Binary Search</title>
-      <link>/post/2022-02-02algorithmbinary-search/</link>
+      <link>/note/2022-02-02algorithmbinary-search/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmbinary-search/</guid>
+      <guid>/note/2022-02-02algorithmbinary-search/</guid>
       <description>LeetCode 704. Binary Search</description>
     </item>
     
     <item>
       <title>Algorithm|List|Basic Theory of List</title>
-      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
+      <link>/note/2022-02-02algorithmbasic-theory-of-list/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
+      <guid>/note/2022-02-02algorithmbasic-theory-of-list/</guid>
       <description>Basic theory of list</description>
     </item>
     
     <item>
       <title>Algorithm|List|Minimum Size Subarray Sum with sliding window</title>
-      <link>/post/2022-02-02algorithmminimum-size-subarray-sum/</link>
+      <link>/note/2022-02-02algorithmminimum-size-subarray-sum/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmminimum-size-subarray-sum/</guid>
+      <guid>/note/2022-02-02algorithmminimum-size-subarray-sum/</guid>
       <description>LeetCode 209.Minimum Size Subarray Sum</description>
     </item>
     
     <item>
       <title>Algorithm|List|Remove element in list with slow and fast pointers</title>
-      <link>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
+      <link>/note/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
+      <guid>/note/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
       <description>LeetCode 27. Remove Element</description>
     </item>
     
     <item>
       <title>Algorithm|List|Spiral Matrix II</title>
-      <link>/post/2022-02-02algorithmspiral-matrix-ii.md/</link>
+      <link>/note/2022-02-02algorithmspiral-matrix-ii.md/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmspiral-matrix-ii.md/</guid>
+      <guid>/note/2022-02-02algorithmspiral-matrix-ii.md/</guid>
       <description>LeetCode 59. Spiral Matrix II</description>
     </item>
     
     <item>
       <title>Algorithm|List|Squares of a Sorted Array</title>
-      <link>/post/2022-02-02algorithmsquares-of-a-sorted-array/</link>
+      <link>/note/2022-02-02algorithmsquares-of-a-sorted-array/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
+      <guid>/note/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
       <description>LeetCode 977. Squares of a Sorted Array</description>
     </item>
     
@@ -270,101 +270,92 @@
     
     <item>
       <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
-      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <link>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <guid>/note/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
       <description>machine learning perceptron model</description>
     </item>
     
     <item>
       <title>Machine Learning Process</title>
-      <link>/post/2022-01-26machine-learning-process/</link>
+      <link>/note/2022-01-26machine-learning-process/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26machine-learning-process/</guid>
+      <guid>/note/2022-01-26machine-learning-process/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Naive Bayes and K-NN</title>
-      <link>/post/2022-01-26naive-bayes-and-k-nn/</link>
+      <link>/note/2022-01-26naive-bayes-and-k-nn/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-26naive-bayes-and-k-nn/</guid>
+      <guid>/note/2022-01-26naive-bayes-and-k-nn/</guid>
       <description>Process of machine learning</description>
     </item>
     
     <item>
       <title>Notes|K Nearest Neighbor (KNN)</title>
-      <link>/post/2022-01-25notek-nearest-neighbor-knn/</link>
+      <link>/note/2022-01-25notek-nearest-neighbor-knn/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-25notek-nearest-neighbor-knn/</guid>
+      <guid>/note/2022-01-25notek-nearest-neighbor-knn/</guid>
       <description>Summary of K Nearest Neighbor (KNN) algorithm.</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-python/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-python/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-python/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-python/</guid>
       <description>Some basic Python summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python Numpy Library</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-numpy-library/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-numpy-library/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-numpy-library/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-numpy-library/</guid>
       <description>Some basic Python Numby library summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic Python Pandas Library</title>
-      <link>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</link>
+      <link>/note/2022-01-21cheatsheet-for-basic-python-pandas-library/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21cheatsheet-for-basic-python-pandas-library/</guid>
+      <guid>/note/2022-01-21cheatsheet-for-basic-python-pandas-library/</guid>
       <description>Some basic Python Pandas library summary</description>
     </item>
     
     <item>
       <title>Note|Data Mining &amp; Analysis Intro Ep.0</title>
-      <link>/post/2022-01-21notedata-mining-analysis-intro/</link>
+      <link>/note/2022-01-21notedata-mining-analysis-intro/</link>
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-21notedata-mining-analysis-intro/</guid>
+      <guid>/note/2022-01-21notedata-mining-analysis-intro/</guid>
       <description>Some basic Python summary</description>
     </item>
     
     <item>
       <title>Notes|Cheatsheet for Basic SQL Code</title>
-      <link>/post/2022-01-19cheatsheet-for-basic-sql/</link>
+      <link>/note/2022-01-19cheatsheet-for-basic-sql/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-19cheatsheet-for-basic-sql/</guid>
+      <guid>/note/2022-01-19cheatsheet-for-basic-sql/</guid>
       <description>Some basic SQL code summary</description>
     </item>
     
     <item>
       <title>Notes|What A Qualified Data Analyst Should be Able to Do</title>
-      <link>/post/2022-01-19what-data-analyst-should-be-able-to-do/</link>
+      <link>/note/2022-01-19what-data-analyst-should-be-able-to-do/</link>
       <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-19what-data-analyst-should-be-able-to-do/</guid>
+      <guid>/note/2022-01-19what-data-analyst-should-be-able-to-do/</guid>
       <description>Four main points for a qualified data analyst should be able to do.</description>
-    </item>
-    
-    <item>
-      <title>为自己的人生负责</title>
-      <link>/chn/2022-01-16%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B4%9F%E8%B4%A3/</link>
-      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/chn/2022-01-16%E4%B8%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F%E8%B4%9F%E8%B4%A3/</guid>
-      <description>经历本身不会决定什么。我们给过去的经历赋予了什么样的意义，这直接决定了我们的生活。</description>
     </item>
     
     <item>
@@ -387,10 +378,10 @@
     
     <item>
       <title>Leetcode|Python Some String Problems</title>
-      <link>/post/2022-01-05leetcodepython-some-string-problems/</link>
+      <link>/note/2022-01-05leetcodepython-some-string-problems/</link>
       <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-05leetcodepython-some-string-problems/</guid>
+      <guid>/note/2022-01-05leetcodepython-some-string-problems/</guid>
       <description>Leetcode problems about string</description>
     </item>
     
@@ -404,38 +395,29 @@
     </item>
     
     <item>
-      <title>正能量</title>
-      <link>/chn/2022-01-06%E6%AD%A3%E8%83%BD%E9%87%8F/</link>
-      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/chn/2022-01-06%E6%AD%A3%E8%83%BD%E9%87%8F/</guid>
-      <description>他们只在安全的时候勇敢，只在免费的时候慷慨。</description>
-    </item>
-    
-    <item>
       <title>Leetcode|Python Linked List Column</title>
-      <link>/post/2022-01-05leetcodepython-linked-list-column/</link>
+      <link>/note/2022-01-05leetcodepython-linked-list-column/</link>
       <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-05leetcodepython-linked-list-column/</guid>
+      <guid>/note/2022-01-05leetcodepython-linked-list-column/</guid>
       <description>Couple of leetcode problems related to linked list</description>
     </item>
     
     <item>
       <title>Leetcode|Python 856 Score of Parentheses</title>
-      <link>/post/2022-01-14leetcodepython-856-score-of-parentheses/</link>
+      <link>/note/2022-01-14leetcodepython-856-score-of-parentheses/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
+      <guid>/note/2022-01-14leetcodepython-856-score-of-parentheses/</guid>
       <description>Use stack to tackle this type of matching problem</description>
     </item>
     
     <item>
       <title></title>
-      <link>/post/2022-01-24noter-for-data-analysis-intro/</link>
+      <link>/note/2022-01-24noter-for-data-analysis-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/post/2022-01-24noter-for-data-analysis-intro/</guid>
+      <guid>/note/2022-01-24noter-for-data-analysis-intro/</guid>
       <description>Basic data type: Double String Logic
 If the items are not of the same type, they are coerced:
 string &amp;lt;-- numeric &amp;lt;-- logical
