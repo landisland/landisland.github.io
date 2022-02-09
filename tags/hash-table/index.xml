@@ -9,64 +9,64 @@
     <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hash-table/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm|Hash table|3Sum</title>
-      <link>/note/2022-02-06algorithmhash-table3sum/</link>
+      <link>/notes/2022-02-06algorithmhash-table3sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-06algorithmhash-table3sum/</guid>
+      <guid>/notes/2022-02-06algorithmhash-table3sum/</guid>
       <description>LeetCode 454. 3Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|4Sum II</title>
-      <link>/note/2022-02-6algorithmhash-table4sum-ii/</link>
+      <link>/notes/2022-02-6algorithmhash-table4sum-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-6algorithmhash-table4sum-ii/</guid>
+      <guid>/notes/2022-02-6algorithmhash-table4sum-ii/</guid>
       <description>LeetCode 454. 4Sum II</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Ransom Note</title>
-      <link>/note/2022-02-06algorithmhash-tableransom-note/</link>
+      <link>/notes/2022-02-06algorithmhash-tableransom-note/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-06algorithmhash-tableransom-note/</guid>
+      <guid>/notes/2022-02-06algorithmhash-tableransom-note/</guid>
       <description>LeetCode 383. Ransom Note</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Two Sum</title>
-      <link>/note/2022-02-06algorithmhash-tabletwo-sum/</link>
+      <link>/notes/2022-02-06algorithmhash-tabletwo-sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-06algorithmhash-tabletwo-sum/</guid>
+      <guid>/notes/2022-02-06algorithmhash-tabletwo-sum/</guid>
       <description>LeetCode 1. Two Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Happy Number</title>
-      <link>/note/2022-02-05algorithmhash-tablehappy-number/</link>
+      <link>/notes/2022-02-05algorithmhash-tablehappy-number/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-05algorithmhash-tablehappy-number/</guid>
+      <guid>/notes/2022-02-05algorithmhash-tablehappy-number/</guid>
       <description>LeetCode 202. Happy Number</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Intersection of Two Arrays</title>
-      <link>/note/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
+      <link>/notes/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
+      <guid>/notes/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
       <description>LeetCode 349. Intersection of Two Arrays</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Valid Anagram</title>
-      <link>/note/2022-02-05algorithmhash-tablevalid-anagram/</link>
+      <link>/notes/2022-02-05algorithmhash-tablevalid-anagram/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/note/2022-02-05algorithmhash-tablevalid-anagram/</guid>
+      <guid>/notes/2022-02-05algorithmhash-tablevalid-anagram/</guid>
       <description>LeetCode 242. Valid Anagram</description>
     </item>
     
