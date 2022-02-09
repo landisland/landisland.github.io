@@ -9,19 +9,19 @@
     <lastBuildDate>Thu, 27 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linear Classifiers: Perceptron, Logistics Regression, SVM</title>
-      <link>/notes/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
+      <link>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</link>
       <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
+      <guid>/post/2022-01-27linear-classifiers-perceptron-logistics-regression-svm/</guid>
       <description>machine learning perceptron model</description>
     </item>
     
     <item>
       <title>Naive Bayes and K-NN</title>
-      <link>/notes/2022-01-26naive-bayes-and-k-nn/</link>
+      <link>/post/2022-01-26naive-bayes-and-k-nn/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-26naive-bayes-and-k-nn/</guid>
+      <guid>/post/2022-01-26naive-bayes-and-k-nn/</guid>
       <description>Process of machine learning</description>
     </item>
     

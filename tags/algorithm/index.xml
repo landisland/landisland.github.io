@@ -9,244 +9,244 @@
     <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algorithm|Greedy|Assign Cookies</title>
-      <link>/notes/2022-02-06algorithmgreedyassign-cookies/</link>
+      <link>/post/2022-02-06algorithmgreedyassign-cookies/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmgreedyassign-cookies/</guid>
+      <guid>/post/2022-02-06algorithmgreedyassign-cookies/</guid>
       <description>LeetCode 455. Assign Cookies</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|3Sum</title>
-      <link>/notes/2022-02-06algorithmhash-table3sum/</link>
+      <link>/post/2022-02-06algorithmhash-table3sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmhash-table3sum/</guid>
+      <guid>/post/2022-02-06algorithmhash-table3sum/</guid>
       <description>LeetCode 454. 3Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|4Sum II</title>
-      <link>/notes/2022-02-6algorithmhash-table4sum-ii/</link>
+      <link>/post/2022-02-6algorithmhash-table4sum-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-6algorithmhash-table4sum-ii/</guid>
+      <guid>/post/2022-02-6algorithmhash-table4sum-ii/</guid>
       <description>LeetCode 454. 4Sum II</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Ransom Note</title>
-      <link>/notes/2022-02-06algorithmhash-tableransom-note/</link>
+      <link>/post/2022-02-06algorithmhash-tableransom-note/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmhash-tableransom-note/</guid>
+      <guid>/post/2022-02-06algorithmhash-tableransom-note/</guid>
       <description>LeetCode 383. Ransom Note</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Two Sum</title>
-      <link>/notes/2022-02-06algorithmhash-tabletwo-sum/</link>
+      <link>/post/2022-02-06algorithmhash-tabletwo-sum/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmhash-tabletwo-sum/</guid>
+      <guid>/post/2022-02-06algorithmhash-tabletwo-sum/</guid>
       <description>LeetCode 1. Two Sum</description>
     </item>
     
     <item>
       <title>Algorithm|Regular Expression</title>
-      <link>/notes/2022-02-06algorithmregular-expression/</link>
+      <link>/post/2022-02-06algorithmregular-expression/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmregular-expression/</guid>
+      <guid>/post/2022-02-06algorithmregular-expression/</guid>
       <description>Summary of Regular Expression</description>
     </item>
     
     <item>
       <title>Algorithm|String| Implement strStr() with KMP</title>
-      <link>/notes/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
+      <link>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
+      <guid>/post/2022-02-06algorithmstringimplement-strstr-with-kmp/</guid>
       <description>LeetCode 28. Implement strStr()</description>
     </item>
     
     <item>
       <title>Algorithm|String|Replace white space</title>
-      <link>/notes/2022-02-06algorithmstringreplace-white-space/</link>
+      <link>/post/2022-02-06algorithmstringreplace-white-space/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmstringreplace-white-space/</guid>
+      <guid>/post/2022-02-06algorithmstringreplace-white-space/</guid>
       <description>Replace white space</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String II</title>
-      <link>/notes/2022-02-06algorithmstringreverse-string-ii/</link>
+      <link>/post/2022-02-06algorithmstringreverse-string-ii/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmstringreverse-string-ii/</guid>
+      <guid>/post/2022-02-06algorithmstringreverse-string-ii/</guid>
       <description>LeetCode 541. Reverse String II</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse String with two pointers</title>
-      <link>/notes/2022-02-05algorithmstringreverse-string/</link>
+      <link>/post/2022-02-05algorithmstringreverse-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-05algorithmstringreverse-string/</guid>
+      <guid>/post/2022-02-05algorithmstringreverse-string/</guid>
       <description>LeetCode 344. Reverse String</description>
     </item>
     
     <item>
       <title>Algorithm|String|Reverse Words in a String</title>
-      <link>/notes/2022-02-06algorithmstringreverse-words-in-a-string/</link>
+      <link>/post/2022-02-06algorithmstringreverse-words-in-a-string/</link>
       <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
+      <guid>/post/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
       <description>LeetCode 151. Reverse Words in a String</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Happy Number</title>
-      <link>/notes/2022-02-05algorithmhash-tablehappy-number/</link>
+      <link>/post/2022-02-05algorithmhash-tablehappy-number/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-05algorithmhash-tablehappy-number/</guid>
+      <guid>/post/2022-02-05algorithmhash-tablehappy-number/</guid>
       <description>LeetCode 202. Happy Number</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Intersection of Two Arrays</title>
-      <link>/notes/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
+      <link>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
+      <guid>/post/2022-02-05algorithmhash-tableintersection-of-two-arrays/</guid>
       <description>LeetCode 349. Intersection of Two Arrays</description>
     </item>
     
     <item>
       <title>Algorithm|Hash table|Valid Anagram</title>
-      <link>/notes/2022-02-05algorithmhash-tablevalid-anagram/</link>
+      <link>/post/2022-02-05algorithmhash-tablevalid-anagram/</link>
       <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-05algorithmhash-tablevalid-anagram/</guid>
+      <guid>/post/2022-02-05algorithmhash-tablevalid-anagram/</guid>
       <description>LeetCode 242. Valid Anagram</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Basic of Linked List</title>
-      <link>/notes/2022-02-03algorithmbasic-of-linked-list/</link>
+      <link>/post/2022-02-03algorithmbasic-of-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithmbasic-of-linked-list/</guid>
+      <guid>/post/2022-02-03algorithmbasic-of-linked-list/</guid>
       <description>Basic knowledge of Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Design Linked List</title>
-      <link>/notes/2022-02-03algorithmdesign-linked-list/</link>
+      <link>/post/2022-02-03algorithmdesign-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithmdesign-linked-list/</guid>
+      <guid>/post/2022-02-03algorithmdesign-linked-list/</guid>
       <description>LeetCode 707. Design Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Remove Linked List Elements with dummy head</title>
-      <link>/notes/2022-02-03algorithmremove-linked-list-elements/</link>
+      <link>/post/2022-02-03algorithmremove-linked-list-elements/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithmremove-linked-list-elements/</guid>
+      <guid>/post/2022-02-03algorithmremove-linked-list-elements/</guid>
       <description>LeetCode 203. Remove Linked List Elements</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Remove Nth Node From End of List with two pointers</title>
-      <link>/notes/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
+      <link>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</guid>
+      <guid>/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/</guid>
       <description>LeetCode 19.Remove Nth Node From End of List with two pointers</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Reverse Linked List with two pointers</title>
-      <link>/notes/2022-02-03algorithm-reverse-linked-list/</link>
+      <link>/post/2022-02-03algorithm-reverse-linked-list/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithm-reverse-linked-list/</guid>
+      <guid>/post/2022-02-03algorithm-reverse-linked-list/</guid>
       <description>Leetcode 206 Reverse Linked List</description>
     </item>
     
     <item>
       <title>Algorithm|Linked List|Swap Nodes in Pairs</title>
-      <link>/notes/2022-02-03algorithmswap-nodes-in-pairs/</link>
+      <link>/post/2022-02-03algorithmswap-nodes-in-pairs/</link>
       <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-03algorithmswap-nodes-in-pairs/</guid>
+      <guid>/post/2022-02-03algorithmswap-nodes-in-pairs/</guid>
       <description>LeetCode 24.Swap Nodes in Pairs</description>
     </item>
     
     <item>
       <title>Algorithm|Binary Search</title>
-      <link>/notes/2022-02-02algorithmbinary-search/</link>
+      <link>/post/2022-02-02algorithmbinary-search/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmbinary-search/</guid>
+      <guid>/post/2022-02-02algorithmbinary-search/</guid>
       <description>LeetCode 704. Binary Search</description>
     </item>
     
     <item>
       <title>Algorithm|List|Basic Theory of List</title>
-      <link>/notes/2022-02-02algorithmbasic-theory-of-list/</link>
+      <link>/post/2022-02-02algorithmbasic-theory-of-list/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmbasic-theory-of-list/</guid>
+      <guid>/post/2022-02-02algorithmbasic-theory-of-list/</guid>
       <description>Basic theory of list</description>
     </item>
     
     <item>
       <title>Algorithm|List|Minimum Size Subarray Sum with sliding window</title>
-      <link>/notes/2022-02-02algorithmminimum-size-subarray-sum/</link>
+      <link>/post/2022-02-02algorithmminimum-size-subarray-sum/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmminimum-size-subarray-sum/</guid>
+      <guid>/post/2022-02-02algorithmminimum-size-subarray-sum/</guid>
       <description>LeetCode 209.Minimum Size Subarray Sum</description>
     </item>
     
     <item>
       <title>Algorithm|List|Remove element in list with slow and fast pointers</title>
-      <link>/notes/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
+      <link>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
+      <guid>/post/2022-02-02algorithmremove-element-in-list-with-slow-and-fast-pointers/</guid>
       <description>LeetCode 27. Remove Element</description>
     </item>
     
     <item>
       <title>Algorithm|List|Spiral Matrix II</title>
-      <link>/notes/2022-02-02algorithmspiral-matrix-ii.md/</link>
+      <link>/post/2022-02-02algorithmspiral-matrix-ii.md/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmspiral-matrix-ii.md/</guid>
+      <guid>/post/2022-02-02algorithmspiral-matrix-ii.md/</guid>
       <description>LeetCode 59. Spiral Matrix II</description>
     </item>
     
     <item>
       <title>Algorithm|List|Squares of a Sorted Array</title>
-      <link>/notes/2022-02-02algorithmsquares-of-a-sorted-array/</link>
+      <link>/post/2022-02-02algorithmsquares-of-a-sorted-array/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
+      <guid>/post/2022-02-02algorithmsquares-of-a-sorted-array/</guid>
       <description>LeetCode 977. Squares of a Sorted Array</description>
     </item>
     
     <item>
       <title>Notes|K Nearest Neighbor (KNN)</title>
-      <link>/notes/2022-01-25notek-nearest-neighbor-knn/</link>
+      <link>/post/2022-01-25notek-nearest-neighbor-knn/</link>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>/notes/2022-01-25notek-nearest-neighbor-knn/</guid>
+      <guid>/post/2022-01-25notek-nearest-neighbor-knn/</guid>
       <description>Summary of K Nearest Neighbor (KNN) algorithm.</description>
     </item>
     
