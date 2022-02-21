@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hypothesis testing and difference between z-Test and t-Test | Landisland</title>
+<meta name="keywords" content="Statistics, hypothesis testing" />
+<meta name="description" content="Basic concepts of statistics">
+<meta name="author" content="">
+<link rel="canonical" href="/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="mask-icon" href="/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.91.2" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Hypothesis testing and difference between z-Test and t-Test" />
+<meta property="og:description" content="Basic concepts of statistics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-02-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2022-02-21T00:00:00&#43;00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hypothesis testing and difference between z-Test and t-Test"/>
+<meta name="twitter:description" content="Basic concepts of statistics"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "/post/"
+    }
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Hypothesis testing and difference between z-Test and t-Test",
+      "item": "/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hypothesis testing and difference between z-Test and t-Test",
+  "name": "Hypothesis testing and difference between z-Test and t-Test",
+  "description": "Basic concepts of statistics",
+  "keywords": [
+    "Statistics", "hypothesis testing"
+  ],
+  "articleBody": "Fundamentals of Hypothesis Testing Let’s see an example of a person is on trial for a criminal offense and the judge needs to provide a verdict on his case. Now, there are four possible combinations in such a case:\n First Case: The person is innocent and the judge identifies the person as innocent Second Case: The person is innocent and the judge identifies the person as guilty Third Case: The person is guilty and the judge identifies the person as innocent Fourth Case: The person is guilty and the judge identifies the person as guilty  Null Hypothesis and Alternate Hypothesis We consider the Null Hypothesis to be true until we find strong evidence against it. Then. we accept the Alternate Hypothesis. We also determine the Significance Level (⍺) which can be understood as the Probability of (Judge Decided Guilty | Person is Innocent) in the previous example. Thus, if ⍺ is smaller, it will require more evidence to reject the Null Hypothesis. Don’t worry, we’ll cover all of this using a case study later.\nSteps to Perform Hypothesis Testing There are four steps to perform Hypothesis Testing:\n Set the Hypothesis Set the Significance Level, Criteria for a decision Compute the test statistics Make a decision  Steps 1 to 3 are quite self-explanatory but on what basis can we make a decision in step 4? What does thisp-value indicate?\nWe can understand this p-value as the measurement of the Defense Attorney’s argument. If the p-value is less than ⍺ , we reject the Null Hypothesis or if the p-value is greater than ⍺, we fail to reject the Null Hypothesis.\nP-value is a numerical value between 0 and 1, the more it closes to 1, the more the predicted model is similar to the null hypothesis.\nCritical Value and P-value Typically, we set the Significance level at 10%, 5%, or 1%. If our test score lies in the Acceptance Zone we fail to reject the Null Hypothesis. If our test score lies in the critical zone, we reject the Null Hypothesis and accept the Alternate Hypothesis.\n Critical Value is the cut off value between Acceptance Zone and Rejection Zone. We compare our test score to the critical value and if the test score is greater than the critical value, that means our test score lies in the Rejection Zone and we reject the Null Hypothesis. On the opposite side, if the test score is less than the Critical Value, that means the test score lies in the Acceptance Zone and we fail to reject the null Hypothesis.\n But why do we need p-value when we can reject/accept hypotheses based on test scores and critical value?\np-value has the benefit that we only need one value to make a decision about the hypothesis. We don’t need to compute two different values like critical value and test scores. Another benefit of using p-value is that we can test at any desired level of significance by comparing this directly with the significance level.\nDirectional Hypothesis In the Directional Hypothesis, the null hypothesis is rejected if the test score is too large (for right-tailed and too small for left tailed). Thus, the rejection region for such a test consists of one part, which is right from the center.\nNon-Directional Hypothesis In a Non-Directional Hypothesis test, the Null Hypothesis is rejected if the test score is either too small or too large. Thus, the rejection region for such a test consists of two parts: one on the left and one on the right.\nWhat’s the z-Test? Z-tests are a statistical way of testing a hypothesis when either:\n We know the population variance, or We do not know the population variance but our sample size is large n ≥ 30  If we have a sample size of less than 30 and do not know the population variance, then we must use a t-test.\nOne-Sample z-Test We perform the One-Sample Z test when we want to compare a sample mean with the population mean.\nTwo-Sample Z Test We perform a Two Sample Z test when we want to compare the mean of two samples.\nWhat is the t-Test? t-Tests are a statistical way of testing a hypothesis when:\n We do not know the population variance Our sample size is small, n  One-Sample t-Test We perform a One-Sample t-test when we want to compare a sample mean with the population mean. The difference from the Z Test is that we do not have the information on Population Variance here. We use the sample standard deviation instead of population standard deviation in this case.\nTwo-Sample t-Test We perform a Two-Sample t-test when we want to compare the mean of two samples.\nDeciding between z-Test and t-Test So when we should perform the Z test and when we should perform t-Test? It’s a key question we need to answer if we want to master statistics.\nIf the sample size is large enough, then the Z test and t-Test will conclude with the same results. For a large sample size, Sample Variance will be a better estimate of Population variance so even if population variance is unknown, we can use the Z test using sample variance.\nSimilarly, for a Large Sample, we have a high degree of freedom. And since t**-distribution approaches the normal distribution**, the difference between the z score and t score is negligible.\nReference\n",
+  "wordCount" : "897",
+  "inLanguage": "en",
+  "datePublished": "2022-02-21T00:00:00Z",
+  "dateModified": "2022-02-21T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Landisland",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="/" accesskey="h" title="Landisland (Alt + H)">Landisland</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="/categories" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="/notes/" title="Notes">
+                    <span>Notes</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://landisland.zhubai.love/" title="Newsletter(Chinese)">
+                    <span>Newsletter(Chinese)</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Hypothesis testing and difference between z-Test and t-Test
+    </h1>
+    <div class="post-meta"><span title='2022-02-21 00:00:00 +0000 UTC'>February 21, 2022</span>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#fundamentals-of-hypothesis-testing" aria-label="Fundamentals of Hypothesis Testing">Fundamentals of Hypothesis Testing</a></li>
+                <li>
+                    <a href="#null-hypothesis-and-alternate-hypothesis" aria-label="Null Hypothesis and Alternate Hypothesis">Null Hypothesis and Alternate Hypothesis</a></li>
+                <li>
+                    <a href="#steps-to-perform-hypothesis-testing" aria-label="Steps to Perform Hypothesis Testing">Steps to Perform Hypothesis Testing</a></li>
+                <li>
+                    <a href="#critical-value-and-p-value" aria-label="Critical Value and P-value">Critical Value and P-value</a></li>
+                <li>
+                    <a href="#directional-hypothesis" aria-label="Directional Hypothesis">Directional Hypothesis</a></li>
+                <li>
+                    <a href="#non-directional-hypothesis" aria-label="Non-Directional Hypothesis">Non-Directional Hypothesis</a></li>
+                <li>
+                    <a href="#whats-the-z-test" aria-label="What&amp;rsquo;s the z-Test?">What&rsquo;s the z-Test?</a><ul>
+                        
+                <li>
+                    <a href="#one-sample-z-test" aria-label="One-Sample z-Test">One-Sample z-Test</a></li>
+                <li>
+                    <a href="#two-sample-z-test" aria-label="Two-Sample Z Test">Two-Sample Z Test</a></li></ul>
+                </li>
+                <li>
+                    <a href="#what-is-the-t-test" aria-label="What is the t-Test?">What is the t-Test?</a><ul>
+                        
+                <li>
+                    <a href="#one-sample-t-test" aria-label="One-Sample t-Test">One-Sample t-Test</a></li>
+                <li>
+                    <a href="#two-sample-t-test" aria-label="Two-Sample t-Test">Two-Sample t-Test</a></li></ul>
+                </li>
+                <li>
+                    <a href="#deciding-between-z-test-and-t-test" aria-label="Deciding between z-Test and t-Test">Deciding between z-Test and t-Test</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h3 id="fundamentals-of-hypothesis-testing">Fundamentals of Hypothesis Testing<a hidden class="anchor" aria-hidden="true" href="#fundamentals-of-hypothesis-testing">#</a></h3>
+<p>Let&rsquo;s see an example of  a person is on trial for a criminal offense and the judge needs to provide a verdict on his case. Now, there are four possible combinations in such a case:</p>
+<ul>
+<li>First Case: The person is innocent and the judge identifies the person as innocent</li>
+<li>Second Case: The person is innocent and the judge identifies the person as guilty</li>
+<li>Third Case: The person is guilty and the judge identifies the person as innocent</li>
+<li>Fourth Case: The person is guilty and the judge identifies the person as guilty</li>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="null-hypothesis-and-alternate-hypothesis">Null Hypothesis and Alternate Hypothesis<a hidden class="anchor" aria-hidden="true" href="#null-hypothesis-and-alternate-hypothesis">#</a></h3>
+<p>We consider <strong>the Null Hypothesis</strong> to be true until we find strong evidence against it. Then. we accept the <strong>Alternate Hypothesis</strong>. We also determine the <strong>Significance Level (⍺</strong>) which can be understood as the Probability of (Judge Decided Guilty | Person is Innocent) in the previous example. Thus, if ⍺ is smaller, it will require more evidence to reject the Null Hypothesis. Don’t worry, we’ll cover all of this using a case study later.</p>
+<!-- raw HTML omitted -->
+<h3 id="steps-to-perform-hypothesis-testing">Steps to Perform Hypothesis Testing<a hidden class="anchor" aria-hidden="true" href="#steps-to-perform-hypothesis-testing">#</a></h3>
+<p>There are four steps to perform Hypothesis Testing:</p>
+<ul>
+<li>Set the Hypothesis</li>
+<li>Set the Significance Level, Criteria for a decision</li>
+<li>Compute the test statistics</li>
+<li>Make a decision</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Steps 1 to 3 are quite self-explanatory but on what basis can we make a decision in step 4? What does this<a href="https://www.analyticsvidhya.com/blog/2019/09/everything-know-about-p-value-from-scratch-data-science/?utm_source=blog&amp;utm_medium=statistics-analytics-hypothesis-testing-z-test-t-test"> p-value</a> indicate?</p>
+<p>We can understand this p-value as the measurement of the Defense Attorney’s argument. If the p-value is less than ⍺ , we reject the Null Hypothesis or if the p-value is greater than ⍺, we fail to reject the Null Hypothesis.</p>
+<p><strong>P-value is a numerical value between 0 and 1, the more it closes to 1, the more the predicted model is similar to the null hypothesis.</strong></p>
+<h3 id="critical-value-and-p-value">Critical Value and P-value<a hidden class="anchor" aria-hidden="true" href="#critical-value-and-p-value">#</a></h3>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-03-18-01-53.png" alt="img"  />
+</p>
+<p>Typically, we set the Significance level at 10%, 5%, or 1%. If our test score lies in the Acceptance Zone we fail to reject the Null Hypothesis. If our test score lies in the critical zone, we reject the Null Hypothesis and accept the Alternate Hypothesis.</p>
+<blockquote>
+<p>Critical Value is the cut off value between Acceptance Zone and Rejection Zone. We compare our test score to the critical value and if the test score is greater than the critical value, that means our test score lies in the Rejection Zone and we reject the Null Hypothesis. On the opposite side, if the test score is less than the Critical Value, that means the test score lies in the Acceptance Zone and we fail to reject the null Hypothesis.</p>
+</blockquote>
+<p><em>But why do we need p-value when we can reject/accept hypotheses based on test scores and critical value?</em></p>
+<p>p-value has the benefit that we <strong>only need one value</strong> to make a decision about the hypothesis. We don’t need to compute two different values like critical value and test scores. Another benefit of using p-value is that we can test at <strong>any desired level of significance</strong> by comparing this directly with the significance level.</p>
+<h3 id="directional-hypothesis">Directional Hypothesis<a hidden class="anchor" aria-hidden="true" href="#directional-hypothesis">#</a></h3>
+<p>In the Directional Hypothesis, the null hypothesis is rejected if the test score is too large (for right-tailed and too small for left tailed). Thus, the rejection region for such a test consists of one part, which is right from the center.</p>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-04-14-46-19.png" alt="img"  />
+</p>
+<h3 id="non-directional-hypothesis">Non-Directional Hypothesis<a hidden class="anchor" aria-hidden="true" href="#non-directional-hypothesis">#</a></h3>
+<p>In a Non-Directional Hypothesis test, the Null Hypothesis is rejected if the test score is either too small or too large. Thus, the rejection region for such a test consists of two parts: one on the left and one on the right.</p>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-04-14-48-36.png" alt="img"  />
+</p>
+<h3 id="whats-the-z-test">What&rsquo;s the z-Test?<a hidden class="anchor" aria-hidden="true" href="#whats-the-z-test">#</a></h3>
+<p>Z-tests are a statistical way of testing a hypothesis when either:</p>
+<ul>
+<li>We know the population variance, or</li>
+<li>We do not know the population variance but our sample size is large n ≥ 30</li>
+</ul>
+<p><em>If we have a sample size of less than 30 and do not know the population variance, then we must use a t-test.</em></p>
+<h4 id="one-sample-z-test">One-Sample z-Test<a hidden class="anchor" aria-hidden="true" href="#one-sample-z-test">#</a></h4>
+<p>We perform the One-Sample Z test when we want to compare <strong>a sample mean with the population mean.</strong></p>
+<!-- raw HTML omitted -->
+<h4 id="two-sample-z-test">Two-Sample Z Test<a hidden class="anchor" aria-hidden="true" href="#two-sample-z-test">#</a></h4>
+<p>We perform a Two Sample Z test when we want to compare <strong>the mean of two samples.</strong></p>
+<!-- raw HTML omitted -->
+<h3 id="what-is-the-t-test">What is the t-Test?<a hidden class="anchor" aria-hidden="true" href="#what-is-the-t-test">#</a></h3>
+<p>t-Tests are a statistical way of testing a hypothesis when:</p>
+<ul>
+<li>We do not know the population variance</li>
+<li>Our sample size is small, n &lt; 30</li>
+</ul>
+<h4 id="one-sample-t-test">One-Sample t-Test<a hidden class="anchor" aria-hidden="true" href="#one-sample-t-test">#</a></h4>
+<p>We perform a One-Sample t-test when we want to <strong>compare a sample mean with the population mean</strong>. The difference from the Z Test is that we do <strong>not have the information on Population Variance</strong> here. We use the <strong>sample standard deviation</strong> instead of population standard deviation in this case.</p>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-04-15-11-01.png" alt="img"  />
+</p>
+<h4 id="two-sample-t-test">Two-Sample t-Test<a hidden class="anchor" aria-hidden="true" href="#two-sample-t-test">#</a></h4>
+<p>We perform a Two-Sample t-test when we want to compare the mean of two samples.</p>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-04-15-18-53.png" alt="img"  />
+</p>
+<h3 id="deciding-between-z-test-and-t-test">Deciding between z-Test and t-Test<a hidden class="anchor" aria-hidden="true" href="#deciding-between-z-test-and-t-test">#</a></h3>
+<p>So when we should perform the Z test and when we should perform t-Test? It’s a key question we need to answer if we want to master statistics.</p>
+<p><img loading="lazy" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2020/03/Screenshot-from-2020-03-04-15-29-37.png" alt="img"  />
+</p>
+<p>If the sample size is large enough, then the Z test and t-Test will conclude with the same results. For a <strong>large sample size</strong>, <strong>Sample Variance will be a better estimate</strong> of Population variance so even if population variance is unknown, we can <strong>use the Z test using sample variance.</strong></p>
+<p>Similarly, for a <strong>Large Sample</strong>, we have a high degree of freedom. And since t**-distribution approaches the normal distribution**, <strong>t</strong>he difference between the z score and t score is negligible.</p>
+<p><a href="https://www.analyticsvidhya.com/blog/2020/06/statistics-analytics-hypothesis-testing-z-test-t-test/">Reference</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="/tags/statistics/">Statistics</a></li>
+      <li><a href="/tags/hypothesis-testing/">hypothesis testing</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="/">Landisland</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+
+    <br>
+    <span>All Conetents Are Licensed Under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nooopener noreferrer" target="_blank">CC BY-NC 4.0</a> Unless Otherwise Stated</span>
+    <br>
+    
+
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

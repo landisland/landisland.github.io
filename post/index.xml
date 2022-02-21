@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What I Think Data Visualization Is in 2022</title>
       <link>/post/2022-01-15what-i-think-data-visualization-is-in-2022/</link>
@@ -41,6 +41,15 @@
       
       <guid>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</guid>
       <description>Heatmap can show a lot</description>
+    </item>
+    
+    <item>
+      <title>Hypothesis testing and difference between z-Test and t-Test</title>
+      <link>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</guid>
+      <description>Basic concepts of statistics</description>
     </item>
     
     <item>
@@ -140,6 +149,15 @@
       
       <guid>/post/2022-02-06algorithmstringreverse-words-in-a-string/</guid>
       <description>LeetCode 151. Reverse Words in a String</description>
+    </item>
+    
+    <item>
+      <title>Generative v.s. Discriminative Models</title>
+      <link>/post/2022-02-10generative-v.s.-discriminative-models/</link>
+      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-10generative-v.s.-discriminative-models/</guid>
+      <description>Machine Learning notes</description>
     </item>
     
     <item>
