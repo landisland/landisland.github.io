@@ -6,7 +6,25 @@
     <description>Recent content on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What You Should Know About Logistic Regression and Naive Bayes</title>
+      <link>/post/2022-02-22what-you-should-know-about-logistic-regression-and-naive-bayes/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-22what-you-should-know-about-logistic-regression-and-naive-bayes/</guid>
+      <description>Some take outs from machine learning</description>
+    </item>
+    
+    <item>
+      <title>Hypothesis testing and difference between z-Test and t-Test</title>
+      <link>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</guid>
+      <description>Basic concepts of statistics</description>
+    </item>
+    
     <item>
       <title>What I Think Data Visualization Is in 2022</title>
       <link>/post/2022-01-15what-i-think-data-visualization-is-in-2022/</link>
@@ -41,15 +59,6 @@
       
       <guid>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</guid>
       <description>Heatmap can show a lot</description>
-    </item>
-    
-    <item>
-      <title>Hypothesis testing and difference between z-Test and t-Test</title>
-      <link>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2022-02-21hypothesis-testing-and-difference-between-z-test-and-t-test/</guid>
-      <description>Basic concepts of statistics</description>
     </item>
     
     <item>
