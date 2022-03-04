@@ -17,6 +17,9 @@
     <loc>/post/2022-01-15what-i-think-data-visualization-is-in-2022/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-03-03how-to-interpret-r-diagnostics-plots/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/2022-01-08my-16personalities-test-results-is-enfj/</loc>
     <lastmod>2022-01-08T00:00:00+00:00</lastmod>
   </url><url>
@@ -26,16 +29,22 @@
     <loc>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/cross-validation/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <loc>/tags/diagnostics-plots/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/r/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/cross-validation/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/latex/</loc>
