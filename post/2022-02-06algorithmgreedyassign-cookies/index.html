@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Greedy|Assign Cookies | Landisland</title>
-<meta name="keywords" content="Algorithm, Greedy, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 455. Assign Cookies">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-06algorithmgreedyassign-cookies/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Greedy|Assign Cookies",
   "description": "LeetCode 455. Assign Cookies",
   "keywords": [
-    "Algorithm", "Greedy", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 455. Assign Cookies\nDescription Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.\nEach child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with; and each cookie j has a size s[j]. If s[j] = g[i], we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.\nSolution class Solution: def findContentChildren(self, g: List[int], s: List[int]) - int: # first we think of optimize cookie g.sort() s.sort() res = 0 for i in range(len(s)): if res  len(g) and s[i] = g[res]: res += 1 return res def findContentChildren1(self, g: List[int], s: List[int]) - int: # feed greatest greed factor g.sort() s.sort() start, count = len(s) - 1, 0 for index in range(len(g)-1, -1, -1): if start = 0 and g[index]  s[start]: start -= 1 count += 1 return count ",
   "wordCount" : "182",
@@ -259,8 +259,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/greedy/">Greedy</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

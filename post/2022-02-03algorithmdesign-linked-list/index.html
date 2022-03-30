@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Linked List|Design Linked List | Landisland</title>
-<meta name="keywords" content="Algorithm, Linked List" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 707. Design Linked List">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-03algorithmdesign-linked-list/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Linked List|Design Linked List",
   "description": "LeetCode 707. Design Linked List",
   "keywords": [
-    "Algorithm", "Linked List"
+    "Leetcode"
   ],
   "articleBody": "From 707. Design Linked List\nDescription Design your implementation of the linked list. You can choose to use a singly or doubly linked list. A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node. If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.\nImplement the MyLinkedList class:\n MyLinkedList() Initializes the MyLinkedList object. int get(int index) Get the value of the indexth node in the linked list. If the index is invalid, return -1. void addAtHead(int val) Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. void addAtTail(int val) Append a node of value val as the last element of the linked list. void addAtIndex(int index, int val) Add a node of value val before the indexth node in the linked list. If index equals the length of the linked list, the node will be appended to the end of the linked list. If index is greater than the length, the node will not be inserted. void deleteAtIndex(int index) Delete the indexth node in the linked list, if the index is valid.  Solution class Node: def __init__(self, val): self.val = val self.next = None class MyLinkedList: def __init__(self): self._head = Node(0) # 虚拟头部节点 self._count = 0 # 添加的节点数 def get(self, index: int) - int: \"\"\" Get the value of the index-th node in the linked list. If the index is invalid, return -1. \"\"\" if 0  index  self._count: node = self.head for _ in range(index + 1): node = node.next return node.val else: return -1 def addAtHead(self, val: int) - None: \"\"\" Add a node of value val before the first element of the linked list. After the insertion, the new node will be the first node of the linked list. \"\"\" self.addAtIndex(0, val) def addAtTail(self, val: int) - None: \"\"\" Append a node of value val to the last element of the linked list. \"\"\" self.addAtIndex(self._count, val) def addAtIndex(self, index: int, val: int) - None: \"\"\" Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. \"\"\" if index  0: index = 0 elif index  self._count: return # number of nodes + 1 self._count += 1 add_node = Node(val) prev_node, current_node = None, self.head for _ in range(index + 1): prev_node, current_node = current_node, current_node.next else: prev_node.next, add_node.next = add_node, current_node def deleteAtIndex(self, index: int) - None: \"\"\" Delete the index-th node in the linked list, if the index is valid. \"\"\" if 0  index  self._count: # counts -1 self._count -= 1 prev_node, current_node = None, self.head for _ in range(index + 1): prev_node, current_node = current_node, current_node.next else: prev_node.next, current_node.next = current_node.next, None ",
   "wordCount" : "533",
@@ -315,8 +315,7 @@ If you want to use the doubly linked list, you will need one more attribute <cod
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/linked-list/">Linked List</a></li>
+      <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>
 </article>

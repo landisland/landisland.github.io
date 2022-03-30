@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Linked List|Swap Nodes in Pairs | Landisland</title>
-<meta name="keywords" content="Algorithm, Linked List, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 24.Swap Nodes in Pairs">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-03algorithmswap-nodes-in-pairs/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Linked List|Swap Nodes in Pairs",
   "description": "LeetCode 24.Swap Nodes in Pairs",
   "keywords": [
-    "Algorithm", "Linked List", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 24. Swap Nodes in Pairs\nDescription Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list’s nodes (i.e., only nodes themselves may be changed.)\nInput: head = [1,2,3,4] Output: [2,1,4,3] Solution class Solution: def swapPairs(self, head: ListNode) - ListNode: res = ListNode(next=head) pre = res # we have to make sure pre.next and pre.next.next are not null value, otherwise swap has ended while pre.next and pre.next.next: cur = pre.next post = pre.next.next # pre，cur，post corresponds to leftmost, middle and rightmost nodes cur.next = post.next post.next = cur pre.next = post pre = pre.next.next return res.next Credit to yuzhoujr\n",
   "wordCount" : "115",
@@ -258,8 +258,6 @@ Output: [2,1,4,3]
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/linked-list/">Linked List</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

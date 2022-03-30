@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Generative v.s. Discriminative Models | Landisland</title>
-<meta name="keywords" content="Algorithm, Discriminative, Generative" />
+<meta name="keywords" content="statistics" />
 <meta name="description" content="Machine Learning notes">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-10generative-v.s.-discriminative-models/" />
@@ -99,7 +99,7 @@
   "name": "Generative v.s. Discriminative Models",
   "description": "Machine Learning notes",
   "keywords": [
-    "Algorithm", "Discriminative", "Generative"
+    "statistics"
   ],
   "articleBody": "Generative classifiers A Generative Model ‌explicitly models the actual distribution of each class. A Generative Model ‌learns the **joint probability distribution p(x,y). **It predicts the conditional probability with the help of Bayes Theorem.\n Assume some functional form for P(Y), P(X|Y) Estimate parameters of P(X|Y), P(Y) directly from training data Use Bayes rule to calculate P(Y |X)  Examples:\n ‌Naïve Bayes Bayesian networks Markov random fields ‌Hidden Markov Models (HMM)  Discriminative classifiers A Discriminative model ‌models the decision boundary between the classes. A Discriminative model ‌learns the conditional probability distribution p(y|x).\n Assume some functional form for P(Y|X) Estimate parameters of P(Y|X) directly from training data  Examples:\n ‌Logistic regression Scalar Vector Machine ‌Traditional neural networks ‌Nearest neighbour Conditional Random Fields (CRF)s  Some test questions  ‌ **What are the problems these models can solve? **Classification tasks. **Which model learns joint probability? **The generative model. ‌**Which model learns conditional probability? **the discriminative model. **What happens when we give correlated features in discriminative models? **They will produce similar output as they are correlated? **What happens when we give correlated features in generative models? **We can’t tell as we do not learn the decision boundaries? **Which models works very well even on less training data? **The discriminative model will work very well as only one set of parameter has to be learned? Is it possible to generate data from with the help of these models? Don’t know. Which model will take less time to get trained? The discriminative model will take less time as only one set of parameter has to be learned? **Which model will take less time to predict output? **The discriminative model will take less time as prediction can be performed directly by the learned conditional probability. The generative model additionaly needs to apply Bayes’ Theorem. **Which model fails to work well if we give a lot of features? **The generative model? **Which model prone to overfitting very easily? **The generative model? ‌**Which model prone to underfitting easily? **The discriminative model? ‌**What happens when training data is biased over one class in Generative Model? **The joint probability will be biased as class probabilites will be biased. Thus, the conditional probability will be biased, too. **What happens when training data is biased over one class in Discriminative Models? **It happens the same like in the generative case. We will receive biased conditional probability. **Which model is more sensitive to outliers? **The discriminative model is more sensitive to outliers as we model the boundaries. Each outlier will shift the class boundaries. ‌**Are you able to fill out the missing values in a dataset with the help of these models? **Yes — if the dataset offers features.  Reference\n",
   "wordCount" : "441",
@@ -297,9 +297,7 @@ The discriminative model will take less time as only one set of parameter has to
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/discriminative/">Discriminative</a></li>
-      <li><a href="/tags/generative/">Generative</a></li>
+      <li><a href="/tags/statistics/">statistics</a></li>
     </ul>
   </footer>
 </article>

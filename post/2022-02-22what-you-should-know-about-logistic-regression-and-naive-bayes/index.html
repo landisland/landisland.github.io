@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>What You Should Know About Logistic Regression and Naive Bayes | Landisland</title>
-<meta name="keywords" content="Statistics, Machine Learning" />
+<meta name="keywords" content="Statistics" />
 <meta name="description" content="Some take outs from machine learning">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-22what-you-should-know-about-logistic-regression-and-naive-bayes/" />
@@ -99,7 +99,7 @@
   "name": "What You Should Know About Logistic Regression and Naive Bayes",
   "description": "Some take outs from machine learning",
   "keywords": [
-    "Statistics", "Machine Learning"
+    "Statistics"
   ],
   "articleBody": "Bayes rule: type of a generative classifier (Bayes Classifier) We use Bayes rule as the basis for designing algorithms, as follows:\nGiven that we wish to learn some target function $f: X \\rightarrow Y$, or equivalently, $P(Y \\mid X)$, we use the training data to learn estimates of $P(X \\mid Y)$ and $P(Y)$. New $X$ examples can then be classified using these estimated probability distributions, plus Bayes rule. This type of classifier is called a generative classifier, because we can view the distribution $P(X \\mid Y)$ as describing how to generate random instances $X$ conditioned on the target attribute $Y$.\nBayes classifier is unrealistic, and then we have Naive Bayes classifier Learning Bayes classifiers typically requires an unrealistic number of training examples (i.e., more than $|X|$ training examples where $X$ is the instance space) unless some form of prior assumption is made about the form of $P(X \\mid Y)$. The Naive Bayes classifier assumes all attributes describing $X$ are conditionally independent given $Y$. This assumption dramatically reduces the number of parameters that must be estimated to learn the classifier. Naive Bayes is a widely used learning algorithm, for both discrete and continuous $X$.\nWhen $X$ is a vector of discrete-valued attributes, Naive Bayes learning algorithms can be viewed as linear classifiers; that is, every such Naive Bayes classifier corresponds to a hyperplane decision surface in $X$. The same statement holds for Gaussian Naive Bayes classifiers if the variance of each feature $i$ is assumed to be independent of the class $k$ (i.e., if $\\sigma_{i k}=\\sigma_{i}$ ).\nLogistic regression: type of a discriminative classifier Logistic Regression is a function approximation algorithm that uses training data to directly estimate $P(Y \\mid X)$, in contrast to Naive Bayes. In this sense, Logistic Regression is often referred to as a discriminative classifier because we can view the distribution $P(Y \\mid X)$ as directly discriminating the value of the target value $Y$ for any given instance $X$.\nLogistic regression and Gaussian naive bayes Logistic Regression is a linear classifier over $X .$ The linear classifiers produced by Logistic Regression and Gaussian Naive Bayes are identical in the limit as the number of training examples approaches infinity, provided the Naive Bayes assumptions hold. However, if these assumptions do not hold, the Naive Bayes bias will cause it to perform less accurately than Logistic Regression, in the limit. Put another way, Naive Bayes is a learning algorithm with greater bias, but lower variance, than Logistic Regression. If this bias is appropriate given the actual data, Naive Bayes will be preferred. Otherwise, Logistic Regression will be preferred.\nSummary We can view function approximation learning algorithms as statistical estimators of functions, or of conditional distributions $P(Y \\mid X)$. They estimate $P(Y \\mid X)$ from a sample of training data. As with other statistical estimators, it can be useful to characterize learning algorithms by their bias and expected variance, taken over different samples of training data.\nReference\n",
   "wordCount" : "487",
@@ -250,8 +250,7 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/statistics/">Statistics</a></li>
-      <li><a href="/tags/machine-learning/">Machine Learning</a></li>
+      <li><a href="/tags/statistics/">statistics</a></li>
     </ul>
   </footer>
 </article>

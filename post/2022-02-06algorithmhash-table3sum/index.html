@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Hash table|3Sum | Landisland</title>
-<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 454. 3Sum">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-06algorithmhash-table3sum/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Hash table|3Sum",
   "description": "LeetCode 454. 3Sum",
   "keywords": [
-    "Algorithm", "Hash table", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 15. 3Sum\nDescription Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.\nNotice that the solution set must not contain duplicate triplets.\nSolution def threeSum(self, nums): res = [] nums.sort() for i in xrange(len(nums)-2): if i  0 and nums[i] == nums[i-1]: continue l, r = i+1, len(nums)-1 while l  r: s = nums[i] + nums[l] + nums[r] if s  0: l +=1 elif s  0: r -= 1 else: res.append((nums[i], nums[l], nums[r])) while l  r and nums[l] == nums[l+1]: l += 1 while l  r and nums[r] == nums[r-1]: r -= 1 l += 1; r -= 1 return res ",
   "wordCount" : "131",
@@ -257,8 +257,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/hash-table/">Hash table</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

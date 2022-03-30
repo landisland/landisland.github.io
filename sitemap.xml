@@ -26,10 +26,7 @@
     <loc>/post/2022-02-01how-to-add-latex-support-in-hugo/</loc>
     <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</loc>
-    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/diagnostics-plots/</loc>
+    <loc>/categories/</loc>
     <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
@@ -41,29 +38,17 @@
     <loc>/tags/r/</loc>
     <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/categories/rational/</loc>
+    <lastmod>2022-03-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2022-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/cross-validation/</loc>
+    <loc>/tags/statistics/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/latex/</loc>
+    <loc>/tags/tatistics/</loc>
     <lastmod>2022-02-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2022-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/statistics/</loc>
-    <lastmod>2022-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/hypothesis-testing/</loc>
-    <lastmod>2022-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/algorithm/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/algorithm/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-02-06algorithmgreedyassign-cookies/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
@@ -98,34 +83,10 @@
     <loc>/post/2022-02-06algorithmstringreverse-words-in-a-string/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/discriminative/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/generative/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/post/2022-02-10generative-v.s.-discriminative-models/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/greedy/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/hash-table/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/leetcode/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/regular-expression/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/regular-expression/</loc>
-    <lastmod>2022-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/string/</loc>
     <lastmod>2022-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-02-05algorithmhash-tablehappy-number/</loc>
@@ -136,6 +97,9 @@
   </url><url>
     <loc>/post/2022-02-05algorithmhash-tablevalid-anagram/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/algorithm/</loc>
+    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-02-03algorithmbasic-of-linked-list/</loc>
     <lastmod>2022-02-03T00:00:00+00:00</lastmod>
@@ -156,9 +120,6 @@
     <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/html/</loc>
-    <lastmod>2022-02-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/html/</loc>
     <lastmod>2022-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/post/2022-02-03htmlday01introduction/</loc>
@@ -185,11 +146,17 @@
     <loc>/post/2022-02-02algorithmsquares-of-a-sorted-array/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</loc>
+    <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/list/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/2022-02-02bias-variance-tradeoff-in-machine-learning/</loc>
+    <loc>/tags/machine-learning/</loc>
     <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/latex/</loc>
+    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/algorithms/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
@@ -263,13 +230,25 @@
     <loc>/tags/data-visualization/</loc>
     <lastmod>2022-01-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/categories/emotional/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/github/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/heatmap/</loc>
     <lastmod>2022-01-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/post/2022-01-11my-youtube-2018-2022-watch-history-in-a-heatmap/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/post/2022-01-05leetcodepython-some-string-problems/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/regular-expression/</loc>
+    <lastmod>2022-01-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/string/</loc>
     <lastmod>2022-01-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/enfj/</loc>

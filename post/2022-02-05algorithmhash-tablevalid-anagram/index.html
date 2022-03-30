@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Hash table|Valid Anagram | Landisland</title>
-<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 242. Valid Anagram">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-05algorithmhash-tablevalid-anagram/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Hash table|Valid Anagram",
   "description": "LeetCode 242. Valid Anagram",
   "keywords": [
-    "Algorithm", "Hash table", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 242. Valid Anagram\nDescription Given two strings s and t, return true if t is an anagram of s, and false otherwise.\nAn Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.\nSolution Solution 1: list (hash table) class Solution: def isAnagram(self, s: str, t: str) - bool: record = [0] * 26 for i in range(len(s)): #don't have to remember a's ASCII，we just want a relative number record[ord(s[i]) - ord(\"a\")] += 1 print(record) for i in range(len(t)): record[ord(t[i]) - ord(\"a\")] -= 1 for i in range(26): if record[i] != 0: # if list record has element does not equal to 0 return False break return True #### Solution 2: dict class Solution: def isAnagram(self, s: str, t: str) - bool: from collections import defaultdict s_dict = defaultdict(int) t_dict = defaultdict(int) for x in s: s_dict[x] += 1 for x in t: t_dict[x] += 1 return s_dict == t_dict ",
   "wordCount" : "167",
@@ -273,8 +273,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/hash-table/">Hash table</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

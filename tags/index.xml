@@ -8,15 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>diagnostics plots</title>
-      <link>/tags/diagnostics-plots/</link>
-      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/diagnostics-plots/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/tags/r/</link>
       <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
@@ -26,92 +17,20 @@
     </item>
     
     <item>
-      <title>Cross Validation</title>
-      <link>/tags/cross-validation/</link>
-      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cross-validation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LaTeX</title>
-      <link>/tags/latex/</link>
-      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
+      <title>statistics</title>
       <link>/tags/statistics/</link>
-      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hypothesis testing</title>
-      <link>/tags/hypothesis-testing/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <title>tatistics</title>
+      <link>/tags/tatistics/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hypothesis-testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithm</title>
-      <link>/tags/algorithm/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/algorithm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Discriminative</title>
-      <link>/tags/discriminative/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/discriminative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generative</title>
-      <link>/tags/generative/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/generative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Greedy</title>
-      <link>/tags/greedy/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/greedy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hash table</title>
-      <link>/tags/hash-table/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/hash-table/</guid>
+      <guid>/tags/tatistics/</guid>
       <description></description>
     </item>
     
@@ -125,20 +44,11 @@
     </item>
     
     <item>
-      <title>regular expression</title>
-      <link>/tags/regular-expression/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+      <title>Algorithm</title>
+      <link>/tags/algorithm/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regular-expression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>String</title>
-      <link>/tags/string/</link>
-      <pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/string/</guid>
+      <guid>/tags/algorithm/</guid>
       <description></description>
     </item>
     
@@ -166,6 +76,24 @@
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>/tags/latex/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/latex/</guid>
       <description></description>
     </item>
     
@@ -301,6 +229,24 @@
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/heatmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regular expression</title>
+      <link>/tags/regular-expression/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/regular-expression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>/tags/string/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/string/</guid>
       <description></description>
     </item>
     

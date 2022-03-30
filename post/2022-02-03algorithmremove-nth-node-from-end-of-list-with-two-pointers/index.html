@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Linked List|Remove Nth Node From End of List with two pointers | Landisland</title>
-<meta name="keywords" content="Algorithm, Linked List, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 19.Remove Nth Node From End of List with two pointers">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-03algorithmremove-nth-node-from-end-of-list-with-two-pointers/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Linked List|Remove Nth Node From End of List with two pointers",
   "description": "LeetCode 19.Remove Nth Node From End of List with two pointers",
   "keywords": [
-    "Algorithm", "Linked List", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 19. Remove Nth Node From End of List with two pointers\nDescription Given the head of a linked list, remove the nth node from the end of the list and return its head.\nSolution Use fast and slow pointers, we first let fast move n steps, and then move fast and slow at the same time, until fast points to the end, then delete the node slow points to.\nclass Solution: def removeNthFromEnd(self, head: ListNode, n: int) - ListNode: head_dummy = ListNode() head_dummy.next = head slow, fast = head_dummy, head_dummy while(n!=0): #fast move n steps forward fast = fast.next n -= 1 while(fast.next!=None): slow = slow.next fast = fast.next #fast comes to th end，the next node of slow pointer points to is the nth node from end of list slow.next = slow.next.next # delete return head_dummy.next ",
   "wordCount" : "138",
@@ -253,8 +253,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/linked-list/">Linked List</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

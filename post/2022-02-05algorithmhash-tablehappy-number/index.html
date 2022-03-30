@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Hash table|Happy Number | Landisland</title>
-<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 202. Happy Number">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-05algorithmhash-tablehappy-number/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Hash table|Happy Number",
   "description": "LeetCode 202. Happy Number",
   "keywords": [
-    "Algorithm", "Hash table", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 202. Happy Number\nDescription Write an algorithm to determine if a number n is happy.\nA happy number is a number defined by the following process:\n Starting with any positive integer, replace the number by the sum of the squares of its digits. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy.  Return true if n is a happy number, and false if not.\nSolution class Solution: def isHappy(self, n: int) - bool: def calculate_happy(num): sum_ = 0 # sum of square of each digit while num: sum_ += (num % 10) ** 2 num = num // 10 return sum_ # record record = set() while True: n = calculate_happy(n) if n == 1: return True # if an element repeats in set, means we are in a loop if n in record: return False else: record.add(n) ",
   "wordCount" : "166",
@@ -266,8 +266,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/hash-table/">Hash table</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

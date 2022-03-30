@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Hash table|4Sum II | Landisland</title>
-<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 454. 4Sum II">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-6algorithmhash-table4sum-ii/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Hash table|4Sum II",
   "description": "LeetCode 454. 4Sum II",
   "keywords": [
-    "Algorithm", "Hash table", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 454. 4Sum II\nDescription Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:\n 0  nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0  Solution # use a dict to store the elements in nums1 and nums2 and their sum hashmap = dict() for n1 in nums1: for n2 in nums2: if n1 + n2 in hashmap: hashmap[n1+n2] += 1 else: hashmap[n1+n2] = 1 # if the -(a+b) exists in nums3 and nums4, we shall add the count count = 0 for n3 in nums3: for n4 in nums4: key = - n3 - n4 if key in hashmap: count += hashmap[key] return count ",
   "wordCount" : "127",
@@ -256,8 +256,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/hash-table/">Hash table</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

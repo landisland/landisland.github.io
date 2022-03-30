@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|String|Replace white space | Landisland</title>
-<meta name="keywords" content="Algorithm, String, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="Replace white space">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-06algorithmstringreplace-white-space/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|String|Replace white space",
   "description": "Replace white space",
   "keywords": [
-    "Algorithm", "String", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "Description Replace every white space in string s with “%20”\nExample 1： input：s = “We are happy.” Output：“We%20are%20happy.”\nSolution class Solution: def replaceSpace(self, s: str) - str: counter = s.count(' ') res = list(s) # 每碰到一个空格就多拓展两个格子，1 + 2 = 3个位置存’%20‘ res.extend([' '] * counter * 2) # 原始字符串的末尾，拓展后的末尾 left, right = len(s) - 1, len(res) - 1 while left = 0: if res[left] != ' ': res[right] = res[left] right -= 1 else: # [right - 2, right), 左闭右开 res[right - 2: right + 1] = '%20' right -= 3 left -= 1 return ''.join(res) 有同学问了，为什么要从后向前填充，从前向后填充不行么？\n从前向后填充就是$O(n^2)$的算法了，因为每次添加元素都要将添加元素之后的所有元素向后移动。\n其实很多数组填充类的问题，都可以先预先给数组扩容带填充后的大小，然后在从后向前进行操作。\n这么做有两个好处：\n 不用申请新数组。 从后向前填充元素，避免了从前先后填充元素要来的 每次添加元素都要将添加元素之后的所有元素向后移动。  Reference\n",
   "wordCount" : "103",
@@ -268,8 +268,6 @@ Output：&ldquo;We%20are%20happy.&rdquo;</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/string/">String</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>

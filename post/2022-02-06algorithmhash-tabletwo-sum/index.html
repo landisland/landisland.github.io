@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Algorithm|Hash table|Two Sum | Landisland</title>
-<meta name="keywords" content="Algorithm, Hash table, Leetcode" />
+<meta name="keywords" content="Leetcode" />
 <meta name="description" content="LeetCode 1. Two Sum">
 <meta name="author" content="">
 <link rel="canonical" href="/post/2022-02-06algorithmhash-tabletwo-sum/" />
@@ -99,7 +99,7 @@
   "name": "Algorithm|Hash table|Two Sum",
   "description": "LeetCode 1. Two Sum",
   "keywords": [
-    "Algorithm", "Hash table", "Leetcode"
+    "Leetcode"
   ],
   "articleBody": "From LeetCode 1. Two Sum\nDescription Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have *exactly* one solution, and you may not use the same element twice.\nYou can return the answer in any order.\nSolution First let’s talk about difference between list, set and map\n list  If the number of elements in a list is small, it will waste a lot of memory space   set  Element in a set is just a key.   map  Map can use key to store number, and value to store index    class Solution: def twoSum(self, nums: List[int], target: int) - List[int]: records = dict() # 用枚举更方便，就不需要通过索引再去取当前位置的值 for idx, val in enumerate(nums): if target - val not in records: records[val] = idx else: return [records[target - val], idx] # 如果存在就返回字典记录索引和当前索引 ",
   "wordCount" : "147",
@@ -266,8 +266,6 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="/tags/algorithm/">Algorithm</a></li>
-      <li><a href="/tags/hash-table/">Hash table</a></li>
       <li><a href="/tags/leetcode/">Leetcode</a></li>
     </ul>
   </footer>
