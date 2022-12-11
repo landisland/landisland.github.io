@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Landisland</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Emotional</title>
+      <link>/categories/emotional/</link>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/emotional/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Rational</title>
       <link>/categories/rational/</link>
@@ -22,15 +31,6 @@
       <pubDate>Fri, 21 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>/categories/data-mining-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emotional</title>
-      <link>/categories/emotional/</link>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/emotional/</guid>
       <description></description>
     </item>
     
